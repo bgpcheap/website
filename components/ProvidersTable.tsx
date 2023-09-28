@@ -26,7 +26,6 @@ const MyTable: React.FC = () => {
             <div className="relative overflow-x-auto shadow-md sm:rounded-lg mb-5 w-full">
 
                 <div className="p-4 bg-gray-100 flex flex-row justify-end">
-                    <label for="table-search" className="sr-only">Search</label>
                     <div className="relative mt-1 items-right">
                         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                             <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20"
