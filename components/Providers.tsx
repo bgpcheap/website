@@ -128,7 +128,7 @@ const data: ProviderData[] = [
         "name": "Vultr",
         "asn": 20473 
       },
-      "locations": [""],
+      "locations": ["Chicago, US", "Seattle, US", "Melbourne, AU", "Frankfurt, DE", "Atlanta, US", "Warsaw, PL", "Seoul, KR", "Miami, US", "Stockholm, SE", "Bangalore, IN", "Manchester, GB", "Santiago, CL", "Delhi NCR, IN", "Johannesburg, ZA", "Honolulu, US", "Mumbai, IN", "Sao Paulo, BR", "Mexico City, MX", "Madrid, ES", "Toronto, CA", "Silicon Valley, US", "London, GB", "Dallas, US", "Sydney, AU", "Paris, FR", "Amsterdam, NL", "Los Angeles, US", "New Jersey, US", "Singapore, SG", "Tokyo, JP", "Osaka, JP", "Tel Aviv, IL"],
       "services": ["VPS", "Baremetal", "DNS"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough'],
