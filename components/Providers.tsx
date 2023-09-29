@@ -54,8 +54,8 @@ const data: ProviderData[] = [
     },
     {
       "provider": {
-        "logo": "/img/ifog-gmbh.png",
-        "logo_include_text": false,
+        "logo": "/img/ifog.png",
+        "logo_include_text": true,
         "name": "iFog GmbH",
         "asn": 34927
       },

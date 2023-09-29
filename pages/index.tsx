@@ -12,19 +12,18 @@ import Footer from '@/components/Footer';
 export default function Home() {
 
   return (
-    <div className="container mx-auto">
+    <>
       <Header />
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20  ">
-        <p className="mt-3 mb-10 p-10 rounded text-center text-lg">
-          List of recommended providers for newbies/hobbyists.
-          want to be added? Open pull request on GitHub
-        </p>
-
-        <ProviderTable />
-      </main>
-
-      <Footer />
-    </div>
-
+      <div className="max-w-screen-xl px-8 mx-auto">
+        <main>
+          <p className="text-gray-800 mt-3 mb-2 py-10 rounded text-center md:text-lg">
+            List of recommended providers for newbies/hobbyists.
+            Want to be added? Open pull request on GitHub.
+          </p>
+          <ProviderTable />
+        </main>
+        <Footer />
+      </div>
+    </>
   )
 }

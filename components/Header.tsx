@@ -27,7 +27,7 @@ const Header = () => {
                 <link rel="icon" href="/favicon.png" />
             </Head>
 
-            <nav className="flex flex-col max-w-screen-xl md:max-w-full container mx-auto">
+            <nav className="flex flex-col max-w-screen-xl px-8 mx-auto">
 
                 <div className="flex flex-row items-center justify-between w-full mt-10">
                     <Link href="/" className="flex items-center text-xl">
@@ -65,7 +65,7 @@ const Header = () => {
                         }}
                     >
                         <div className="overflow-hidden w-full mt-2">
-                            <div className="bg-zinc-200 flex flex-col p-3  gap-1">
+                            <div className="bg-zinc-50 flex flex-col p-3 gap-1 rounded-lg border border-gray-200">
                                 {menuItems.map((item, index) => (
                                     <Link
                                         key={index}
@@ -73,7 +73,7 @@ const Header = () => {
                                         onClick={() => {
                                             setIsOpen(false);
                                         }}
-                                        className={`${pathname == item.link ? 'bg-white text-black' : 'text-black'} transition-all duration-200 font-medium px-3 py-2.5 rounded-md`}
+                                        className={`${pathname == item.link ? 'bg-white text-black' : 'text-black'} transition-all duration-200 font-medium px-3 py-2.5 rounded-lg`}
                                     >
                                         {item.name}
                                     </Link>
