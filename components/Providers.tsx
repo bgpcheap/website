@@ -160,7 +160,7 @@ const data: ProviderData[] = [
         "logo": "https://v.ps/assets/img/logo_dark.7d4c766e.svg",
         "logo_include_text": true,
         "name": "V.ps",
-        "asn": 3214
+        "asn": 3204
       },
       "locations": ["London, GB", "Frankfurt, DE"],
       "services": ["VPS", "IXP Access"],
