@@ -146,7 +146,7 @@ const data: ProviderData[] = [
         "asn": 835
       },
       "locations": ["Toronto, CA"],
-      "services": ["VPS", "Baremetal"],
+      "services": ["VPS", "Baremetal", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
