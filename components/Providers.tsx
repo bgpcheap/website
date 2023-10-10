@@ -59,7 +59,7 @@ const data: ProviderData[] = [
         "name": "iFog GmbH",
         "asn": 34927
       },
-      "locations": [ "Frankfurt, DE", "London, GB", "Zurich, CH", "Sydney, AU", "Oslo, NO", "Amsterdam, NL", "Fremont, US", "Kansas City, US"],
+      "locations": [ "Singapore, SG", "Barcelona, ES", "Frankfurt, DE", "London, GB", "Zurich, CH", "Sydney, AU", "Oslo, NO", "Amsterdam, NL", "Fremont, US", "Kansas City, US"],
       "services": ["LIR Services", "IXP Access", "VPS", "Baremetal"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
@@ -133,7 +133,7 @@ const data: ProviderData[] = [
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough'],
       "bgpFee": "None",
-      "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
+      "bgpFilters": ["RPKI", "LOA Required"],
       "notes": "",
       "pricing": "Starting at $5 USD",
       "link": "https://www.vultr.com/?ref=6883827"
@@ -162,7 +162,7 @@ const data: ProviderData[] = [
         "name": "V.ps",
         "asn": 3204
       },
-      "locations": ["London, GB", "Frankfurt, DE"],
+      "locations": ["London, GB", "Frankfurt, DE", "Amsterdam, NL", "Düsseldorf, DE", "Tallinn, EE", "San Jose, US", "New York, US", "Seattle, US", "Hong Kong, HK", "Osaka, JP", "Tokyo, JP", "Sydney, AU"],
       "services": ["VPS", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
@@ -170,7 +170,7 @@ const data: ProviderData[] = [
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "Can provide access to IX exchanges DE-CIX, LocIX and AMS-IX",
       "pricing": "Starts at 5.95 EUR",
-      "link": "https://v.ps/pricing/"
+      "link": "https://vps.hosting/?affid=1286&affplan=1"
     },
     {
       "provider": {
@@ -205,6 +205,57 @@ const data: ProviderData[] = [
       "notes": "",
       "pricing": "Starting at $10 USD",
       "link": "https://pebblehost.com/"
+    },
+    {
+      "provider": {
+        "logo": "/img/f4networks.png",
+        "logo_include_text": false,
+        "name": "F4 Networks",
+        "asn": 21738
+      },
+      "locations": ["Kansas City, US", "San Francisco, US"],
+      "services": ["VPS", "Baremetal", "Tunnels"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "",
+      "pricing": "Starting at $6 USD",
+      "link": "https://store.f4.network/"
+    },
+    {
+      "provider": {
+        "logo": "/img/divergent.png",
+        "logo_include_text": true,
+        "name": "Divergent Networks",
+        "asn": 50391
+      },
+      "locations": ["London, GB"],
+      "services": ["LIR Services", "VPS", "Tunnels"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Communities', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "",
+      "pricing": "Starting at £5 GBP",
+      "link": "https://divergentnetworks.co.uk/"
+    },
+    {
+      "provider": {
+        "logo": "/img/virtua.png",
+        "logo_include_text": true,
+        "name": "Virtua Cloud",
+        "asn": 35661
+      },
+      "locations": ["Paris, FR", "Fremont, US", "Lille, FR"],
+      "services": ["VPS"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "",
+      "pricing": "Starting at 3 EUR",
+      "link": "https://www.virtua.cloud/?ref=6uqf3mtl"
     }
   ];
 
