@@ -256,6 +256,23 @@ const data: ProviderData[] = [
       "notes": "",
       "pricing": "Starting at 3 EUR",
       "link": "https://www.virtua.cloud/?ref=6uqf3mtl"
+    },
+    {
+      "provider": {
+        "logo": "/img/getservers.png",
+        "logo_include_text": true,
+        "name": "GetServers",
+        "asn": 48605
+      },
+      "locations": ["Manchester, GB"],
+      "services": ["VPS", "Baremetal"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "",
+      "pricing": "Starting at £2.50 GBP",
+      "link": "https://getservers.co.uk/"
     }
   ];
 
