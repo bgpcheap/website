@@ -31,83 +31,81 @@ body:
       required: true
 
   - type: checkboxes
-    id: bgp
+    id: bgpCommunities
     attributes:
-      label: BGP Commununites
+      label: BGP Communities
       options:
-        - label: Yes
-          required: true
-        - label: No
-          required: true
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
 
   - type: input
-    id: url
+    id: bgpCommunitiesUrl
     attributes:
       label: "Link to BGP communities (if available)"
-    validations:
-      required: false
 
   - type: checkboxes
-    id: bgp
+    id: bgpPassThrough
     attributes:
-      label: BGP Commununites Pass-through
+      label: BGP Communities Pass-through
       options:
-        - label: Yes
-          required: true
-        - label: No
-          required: true
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
 
   - type: checkboxes
-    id: auto-filters
+    id: autoFilters
     attributes:
       label: Automatic IRR filters
       options:
-        - label: Yes
-          required: true
-        - label: No
-          required: true
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
 
   - type: checkboxes
-    id: rpki
+    id: rpkiFilter
     attributes:
       label: RPKI Filter
       options:
-        - label: Yes
-          required: true
-        - label: No
-          required: true
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
 
   - type: checkboxes
-    id: loa
+    id: loaRequired
     attributes:
       label: LOA Required
       options:
-        - label: Yes
-          required: true
-        - label: No
-          required: true
-
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
 
   - type: checkboxes
-    id: downstream
+    id: ipv6Support
     attributes:
       label: IPv6 Support
       options:
-        - label: Yes
-          required: true
-        - label: No
-          required: true
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
 
   - type: dropdown
     id: table
     attributes:
       label: What type of BGP table can you provide?
-      multiple: false
       options:
-        - Full Table + Default
-        - Partial Table + Default
-        - Default
-        - None
+        - "Full Table + Default"
+        - "Partial Table + Default"
+        - "Default"
+        - "No Table"  # Changed from "None"
+    validations:
+      required: true
 
   - type: textarea
     id: locations
@@ -119,26 +117,28 @@ body:
         2.
         3.
         ...
-      render: bash
+    validations:
+      required: true
 
   - type: checkboxes
-    id: downstream
+    id: downstreamSupport
     attributes:
       label: Downstream Support (AS-SET)
       options:
-        - label: Yes
-          required: true
-        - label: No
-          required: true
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
 
   - type: checkboxes
-    id: terms
+    id: policyAgreement
     attributes:
       label: Policy
       description: By submitting this issue, you have read the policy and the provider falls within the [Policy](https://https://bgp.cheap/policy) to be added
       options:
-        - label: I agree to the provider falls in this policy
-          required: true
+        - label: "I agree that the provider falls within this policy"
+    validations:
+      required: true
 
   - type: markdown
     attributes:
