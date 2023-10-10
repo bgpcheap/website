@@ -30,13 +30,15 @@ body:
     validations:
       required: true
 
-  - type: checkboxes
+  - type: dropdown
     id: bgpCommunities
     attributes:
       label: BGP Communities
+      multiple: true
       options:
-        - label: "Yes"
-        - label: "No"
+        - "Traffic Engineering (Prepends / Do not announce)"
+        - "Route origin (Where the route originated from)"
+        - "No communities"
     validations:
       required: true
 
@@ -45,53 +47,58 @@ body:
     attributes:
       label: "Link to BGP communities (if available)"
 
-  - type: checkboxes
+  - type: dropdown
     id: bgpPassThrough
     attributes:
       label: BGP Communities Pass-through
       options:
-        - label: "Yes"
-        - label: "No"
+        - "Yes"
+        - "No"
     validations:
       required: true
 
-  - type: checkboxes
+  - type: dropdown
     id: autoFilters
     attributes:
-      label: Automatic IRR filters
+      label: Automatic Prefix List
       options:
-        - label: "Yes"
-        - label: "No"
+        - "Yes"
+        - "No"
     validations:
       required: true
 
-  - type: checkboxes
+  - type: input
+    id: autoFiltersWhen
+    attributes:
+      label: "How often are the filters updated? (If available)"
+
+  - type: dropdown
     id: rpkiFilter
     attributes:
-      label: RPKI Filter
+      label: RPKI Filtering
       options:
-        - label: "Yes"
-        - label: "No"
+        - "Yes"
+        - "No"
     validations:
       required: true
 
-  - type: checkboxes
+  - type: dropdown
     id: loaRequired
     attributes:
       label: LOA Required
       options:
-        - label: "Yes"
-        - label: "No"
+        - "Yes"
+        - "No"
     validations:
       required: true
 
-  - type: checkboxes
+  - type: dropdown
     id: ipv6Support
     attributes:
       label: IPv6 Support
       options:
-        - label: "Yes"
-        - label: "No"
+        - "Yes"
+        - "No"
     validations:
       required: true
 
@@ -120,13 +127,13 @@ body:
     validations:
       required: true
 
-  - type: checkboxes
+  - type: dropdown
     id: downstreamSupport
     attributes:
       label: Downstream Support (AS-SET)
       options:
-        - label: "Yes"
-        - label: "No"
+        - "Yes"
+        - "No"
     validations:
       required: true
 
