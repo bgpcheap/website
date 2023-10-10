@@ -130,6 +130,19 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    id: services
+    attributes:
+      label: Services offered
+      placeholder: Enter services here
+      value: |
+        1.
+        2.
+        3.
+        ...
+    validations:
+      required: true
+
   - type: dropdown
     id: downstreamSupport
     attributes:
@@ -139,6 +152,14 @@ body:
         - "No"
     validations:
       required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      placeholder: Enter any notes about the provider here
+    validations:
+      required: false
 
   - type: checkboxes
     id: policyAgreement
