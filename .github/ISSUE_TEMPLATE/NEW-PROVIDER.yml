@@ -105,9 +105,12 @@ body:
   - type: dropdown
     id: table
     attributes:
-      label: What type of BGP table can you provide?
+      label: What type of BGP tables can you provide?
+      multiple: true
       options:
+        - "Full Table"
         - "Full Table + Default"
+        - "Partial Table"
         - "Partial Table + Default"
         - "Default"
         - "No Table"
