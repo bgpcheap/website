@@ -282,7 +282,7 @@ const data: ProviderData[] = [
         "asn": 209735
       },
       "locations": ["London, GB"],
-      "services": ["VPS", "Baremetal", "IXP Access"],
+      "services": ["VPS", "Baremetal", "IXP Access", "LIR Services"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
