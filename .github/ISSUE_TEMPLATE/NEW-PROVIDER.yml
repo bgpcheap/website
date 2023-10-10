@@ -1,0 +1,147 @@
+name: New Provider
+description: If you
+title: "[NEWPROVIDER] - <name>"
+labels: ["network", "configuration"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out the form!
+
+  - type: input
+    id: name
+    attributes:
+      label: "Provider Name"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: "Provider URL"
+    validations:
+      required: true
+
+  - type: input
+    id: asn
+    attributes:
+      label: "Provider ASN"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: bgp
+    attributes:
+      label: BGP Commununites
+      options:
+        - label: Yes
+          required: true
+        - label: No
+          required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: "Link to BGP communities (if available)"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: bgp
+    attributes:
+      label: BGP Commununites Pass-through
+      options:
+        - label: Yes
+          required: true
+        - label: No
+          required: true
+
+  - type: checkboxes
+    id: auto-filters
+    attributes:
+      label: Automatic IRR filters
+      options:
+        - label: Yes
+          required: true
+        - label: No
+          required: true
+
+  - type: checkboxes
+    id: rpki
+    attributes:
+      label: RPKI Filter
+      options:
+        - label: Yes
+          required: true
+        - label: No
+          required: true
+
+  - type: checkboxes
+    id: loa
+    attributes:
+      label: LOA Required
+      options:
+        - label: Yes
+          required: true
+        - label: No
+          required: true
+
+
+  - type: checkboxes
+    id: downstream
+    attributes:
+      label: IPv6 Support
+      options:
+        - label: Yes
+          required: true
+        - label: No
+          required: true
+
+  - type: dropdown
+    id: table
+    attributes:
+      label: What type of BGP table can you provide?
+      multiple: false
+      options:
+        - Full Table + Default
+        - Partial Table + Default
+        - Default
+        - None
+
+  - type: textarea
+    id: locations
+    attributes:
+      label: Locations
+      placeholder: Enter locations here
+      value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
+
+  - type: checkboxes
+    id: downstream
+    attributes:
+      label: Downstream Support (AS-SET)
+      options:
+        - label: Yes
+          required: true
+        - label: No
+          required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Policy
+      description: By submitting this issue, you have read the policy and the provider falls within the [Policy](https://https://bgp.cheap/policy) to be added
+      options:
+        - label: I agree to the provider falls in this policy
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Additional Details
+        Provide any other details or information that might be helpful for this configuration.
