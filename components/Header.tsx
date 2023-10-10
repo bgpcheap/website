@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <>
             <Head>
-                <title>{menuItems.filter((x => x.link == pathname))[0].name || ''} - bgp.cheap</title>
+                <title>{`${menuItems.filter((x => x.link == pathname))[0].name || ''} - bgp.cheap`}</title>
                 <meta property="og:title" content="bgp.cheap" />
                 <meta property="twitter:title" content="bgp.cheap" />
                 <link rel="icon" href="/favicon.png" />
