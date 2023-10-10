@@ -71,7 +71,7 @@ export default function Home() {
             <h4 id="v-policy-review" className="text-lg font-semibold">IV. Policy Review</h4>
             <p className="mb-4">This policy will be reviewed annually to ensure it continues to facilitate the directory’s objective of providing a reliable resource for finding affordable hosting providers with BGP sessions. Suggestions for policy modifications can be submitted to the review team for consideration during the annual review.</p>
             <h4 id="vi-contact-information" className="text-lg font-semibold">V. Contact Information</h4>
-            <p className="mb-4">For inquiries regarding this policy or listing your hosting provider, please open a pull request on <a href="https://github.com/bgpcheap/website" className="text-blue-500 hover:underline">GitHub</a>.</p>
+            <p className="mb-4">For inquiries regarding this policy or listing your hosting provider, please open a issue on <a href="https://github.com/bgpcheap/website/issues/new/choose" className="text-blue-500 hover:underline">GitHub</a>.</p>
             <h4 id="vii-policy-effective-date" className="text-lg font-semibold">VI. Policy Effective Date</h4>
             <p className="mb-4">This policy is effective as of 29/03/2023 (DD/MM/YYYY) and supersedes all previous policies regarding the listing of hosting providers on the bgp.cheap directory.</p>
         </div>
