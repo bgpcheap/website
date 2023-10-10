@@ -18,7 +18,7 @@ export default function Home() {
         <main>
           <p className="text-gray-800 mt-3 mb-2 py-10 rounded text-center md:text-lg">
             List of recommended providers for newbies/hobbyists.
-            Want to be added? Open pull request on GitHub.
+            Want to be added? Open issue on GitHub.
           </p>
           <ProviderTable />
         </main>
