@@ -32,7 +32,7 @@ const MyTable: React.FC = () => {
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
                                     d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                                    clip-rule="evenodd"></path>
+                                    clipRule="evenodd"></path>
                             </svg>
                         </div>
                         <input type="search" id="table-search" onChange={handleChange} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 block w-full md:w-80 pl-10 p-2.5" placeholder="Search (country, services or name)" />
@@ -72,7 +72,7 @@ const MyTable: React.FC = () => {
                             <p className="text-xs font-medium uppercase text-gray-500 tracking-wide">Locations</p>
                             <div className="flex flex-wrap gap-2 mt-2 mb-4">
 
-                                {item.locations.length > 0 && item.locations.map((item: any, index: number) => (
+                                {item.locations.length > 0 && item.locations.sort().map((item: any, index: number) => (
                                     <div key={index} className='flex items-center gap-1 text-xs font-medium text-gray-800 bg-white border border-gray-200 rounded-lg p-1.5'>
                                         <img src={`/img/flags/${item.toLowerCase().split(", ")[1]}.svg`} className='h- w-4 flex-shrink-0' />
 
@@ -82,7 +82,7 @@ const MyTable: React.FC = () => {
                             </div>
                             <p className="text-xs font-medium uppercase text-gray-500 tracking-wide">Services</p>
                             <div className="flex gap-3 flex-wrap mt-2 mb-4">
-                                {item.services.map((item: any, index: number) => (
+                                {item.services.sort().map((item: any, index: number) => (
                                     <span key={index} className="text-xs font-medium text-gray-800 bg-white border border-gray-200 rounded-lg p-1.5">{item}</span>
                                 ))}
                             </div>
