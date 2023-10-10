@@ -273,6 +273,23 @@ const data: ProviderData[] = [
       "notes": "",
       "pricing": "Starting at £2.50 GBP",
       "link": "https://getservers.co.uk/"
+    },
+    {
+      "provider": {
+        "logo": "/img/lagrange.png",
+        "logo_include_text": false,
+        "name": "Lagrange",
+        "asn": 209735
+      },
+      "locations": ["London, GB"],
+      "services": ["VPS", "Baremetal", "IXP Access"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "£25 for ASN + /48\nLINX ports available for VPS and baremetal",
+      "pricing": "Starting at £8 GBP",
+      "link": "https://lagrange.cloud/"
     }
   ];
 
