@@ -1,7 +1,7 @@
-name: New Provider
-description: If you
+name: ➕ New Provider
+description: Submit details for a new network provider. 
 title: "[NEWPROVIDER] - <name>"
-labels: ["network", "configuration"]
+labels: ["provider"]
 
 body:
   - type: markdown
@@ -103,7 +103,7 @@ body:
         - "Full Table + Default"
         - "Partial Table + Default"
         - "Default"
-        - "No Table"  # Changed from "None"
+        - "No Table"
     validations:
       required: true
 
@@ -139,9 +139,3 @@ body:
         - label: "I agree that the provider falls within this policy"
     validations:
       required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ### Additional Details
-        Provide any other details or information that might be helpful for this configuration.
