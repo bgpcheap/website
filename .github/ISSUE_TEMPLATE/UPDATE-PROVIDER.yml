@@ -1,0 +1,31 @@
+name: 🔄 Update Provider
+description: If provider details are wrong and need updating
+title: "[UPDATEPROVIDER] - <name>"
+labels: ["provider"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out the form!
+
+  - type: input
+    id: name
+    attributes:
+      label: "Provider Name"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: What needs updating?
+      placeholder: Details to update
+      value: |
+        1.
+        2.
+        3.
+        ...
+    validations:
+      required: true
+      

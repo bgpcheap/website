@@ -1,0 +1,172 @@
+name: ➕ New Provider
+description: Submit details for a new network provider. 
+title: "[NEWPROVIDER] - <name>"
+labels: ["provider"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out the form!
+
+  - type: input
+    id: name
+    attributes:
+      label: "Provider Name"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: "Provider URL"
+    validations:
+      required: true
+
+  - type: input
+    id: asn
+    attributes:
+      label: "Provider ASN"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: bgpCommunities
+    attributes:
+      label: BGP Communities
+      multiple: true
+      options:
+        - "Traffic Engineering (Prepends / Do not announce)"
+        - "Route origin (Where the route originated from)"
+        - "No communities"
+    validations:
+      required: true
+
+  - type: input
+    id: bgpCommunitiesUrl
+    attributes:
+      label: "Link to BGP communities (if available)"
+
+  - type: dropdown
+    id: bgpPassThrough
+    attributes:
+      label: BGP Communities Pass-through
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: autoFilters
+    attributes:
+      label: Automatic Prefix List
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: input
+    id: autoFiltersWhen
+    attributes:
+      label: "How often are the filters updated? (If available)"
+
+  - type: dropdown
+    id: rpkiFilter
+    attributes:
+      label: RPKI Filtering
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: loaRequired
+    attributes:
+      label: LOA Required
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ipv6Support
+    attributes:
+      label: IPv6 Support
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: table
+    attributes:
+      label: What type of BGP tables can you provide?
+      multiple: true
+      options:
+        - "Full Table"
+        - "Full Table + Default"
+        - "Partial Table"
+        - "Partial Table + Default"
+        - "Default"
+        - "No Table"
+    validations:
+      required: true
+
+  - type: textarea
+    id: locations
+    attributes:
+      label: Locations
+      placeholder: Enter locations here
+      value: |
+        1.
+        2.
+        3.
+        ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: services
+    attributes:
+      label: Services offered
+      placeholder: Enter services here
+      value: |
+        1.
+        2.
+        3.
+        ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: downstreamSupport
+    attributes:
+      label: Downstream Support (AS-SET)
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      placeholder: Enter any notes about the provider here
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: policyAgreement
+    attributes:
+      label: Policy
+      description: By submitting this issue, you have read the policy and the provider falls within the [Policy](https://https://bgp.cheap/policy) to be added
+      options:
+        - label: "I agree that the provider falls within this policy"
+    validations:
+      required: true
