@@ -111,14 +111,14 @@ const data: ProviderData[] = [
         "asn": 199545
       },
       "locations": ["Copenhagen, DK"],
-      "services": ["VPS", "Transit", "Colocation"],
+      "services": ["VPS", "IXP Access", "Baremetal", "Transit", "Colocation"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
-      "bgpFilters": ["RPKI", "LOA Required"],
+      "bgpFilters": ["Automatic IRR", "RPKI"],
 
-      "notes": "Open a ticket to setup BGP. Filters updated every friday.",
-      "pricing": "Starting at $2.00 USD with discount \"bgp.cheap\"",
+      "notes": "Fully automatic BGP setup from dashboard. Filters submitted to upstreams every monday.\nCan provide access to IX exchange NorthIX",
+      "pricing": "Starting at $1.50 USD with discount \"bgp.cheap\"",
       "link": "https://www.suble.io/"
     },
     {
