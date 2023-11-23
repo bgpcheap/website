@@ -13,6 +13,7 @@ interface ProviderData {
     bgpFeatures: string[];
     notes: string;
     pricing: string;
+    startPrice: number; // USD in cents
     link: string;
 }
 
@@ -32,6 +33,7 @@ const data: ProviderData[] = [
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
       "pricing": "Starting at $2.50 USD",
+      "startPrice": 250,
       "link": "https://clients.accuristechnologies.ca/aff.php?aff=1"
     },
     {
@@ -50,6 +52,7 @@ const data: ProviderData[] = [
 
       "notes": "VMs can have access to FREMIX/ONIX",
       "pricing": "$5USD/month for VPS, $35 USD for AS",
+      "startPrice": 500,
       "link": "https://my.cloudie.sh/aff.php?aff=8"
     },
     {
@@ -67,6 +70,7 @@ const data: ProviderData[] = [
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "Can provide access to numerous IXs such as LocIX, DE-CIX, NL-ix, FogIXP and LoNAP",
       "pricing": "Starting at 4 CHF/month\n40 CHF/year for AS registrations",
+      "startPrice": 443,
       "link": "https://my.ifog.ch/order/forms/a/OTM5"
     },
     {
@@ -85,6 +89,7 @@ const data: ProviderData[] = [
 
       "notes": "",
       "pricing": "Starting at 50 SEK",
+      "startPrice": 445,
       "link": "https://my.karabro.se/aff.php?aff=1"
     },
     // {
@@ -118,7 +123,8 @@ const data: ProviderData[] = [
       "bgpFilters": ["Automatic IRR", "RPKI"],
 
       "notes": "Fully automatic BGP setup from dashboard. Filters submitted to upstreams every monday.\nCan provide access to IX exchange NorthIX",
-      "pricing": "Starting at $1.50 USD with discount \"bgp.cheap\"",
+      "pricing": "Starting at $2.00 USD with discount \"bgp.cheap\"",
+      "startPrice": 200,
       "link": "https://www.suble.io/"
     },
     {
@@ -136,6 +142,7 @@ const data: ProviderData[] = [
       "bgpFilters": ["RPKI", "LOA Required"],
       "notes": "",
       "pricing": "Starting at $5 USD",
+      "startPrice": 500,
       "link": "https://www.vultr.com/?ref=6883827"
     },
     {
@@ -153,6 +160,7 @@ const data: ProviderData[] = [
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "Minimum s1.small for VPS. Can also provide access to ONIX",
       "pricing": "Starting at $3.50 USD",
+      "startPrice": 350,
       "link": "https://xenyth.net/?affid=455"
     },
     {
@@ -170,6 +178,7 @@ const data: ProviderData[] = [
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "Can provide access to IX exchanges DE-CIX, LocIX and AMS-IX",
       "pricing": "Starts at 5.95 EUR",
+      "startPrice": 629,
       "link": "https://vps.hosting/?affid=1286&affplan=1"
     },
     {
@@ -187,6 +196,7 @@ const data: ProviderData[] = [
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
       "pricing": "Starting at $4.50 USD",
+      "startPrice": 450,
       "link": "https://zappiehost.com/bgp-peering-with-cloud-vps"
     },
     {
@@ -204,6 +214,7 @@ const data: ProviderData[] = [
       "bgpFilters": ["RPKI"],
       "notes": "",
       "pricing": "Starting at $10 USD",
+      "startPrice": 1000,
       "link": "https://pebblehost.com/"
     },
     {
@@ -221,6 +232,7 @@ const data: ProviderData[] = [
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
       "pricing": "Starting at $6 USD",
+      "startPrice": 600,
       "link": "https://store.f4.network/"
     },
     {
@@ -238,6 +250,7 @@ const data: ProviderData[] = [
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
       "pricing": "Starting at £5 GBP",
+      "startPrice": 606,
       "link": "https://divergentnetworks.co.uk/"
     },
     {
@@ -255,6 +268,7 @@ const data: ProviderData[] = [
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
       "pricing": "Starting at 3 EUR",
+      "startPrice": 317,
       "link": "https://www.virtua.cloud/?ref=6uqf3mtl"
     },
     {
@@ -272,6 +286,7 @@ const data: ProviderData[] = [
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
       "pricing": "Starting at £2.50 GBP",
+      "startPrice": 303,
       "link": "https://getservers.co.uk/"
     },
     {
@@ -289,6 +304,7 @@ const data: ProviderData[] = [
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "£25 for ASN + /48\nLINX ports available for VPS and baremetal",
       "pricing": "Starting at £8 GBP",
+      "startPrice": 970,
       "link": "https://lagrange.cloud/"
     },
     {
@@ -311,6 +327,7 @@ const data: ProviderData[] = [
       "notes": "Fully automated BGP pipeline from sign up to announcement.",
       "pricing": "Starting at $8 USD",
       "link": "https://neptunenetworks.org",
+      "startPrice": 800
     },
   ];
 
