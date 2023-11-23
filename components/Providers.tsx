@@ -290,7 +290,28 @@ const data: ProviderData[] = [
       "notes": "£25 for ASN + /48\nLINX ports available for VPS and baremetal",
       "pricing": "Starting at £8 GBP",
       "link": "https://lagrange.cloud/"
-    }
+    },
+    {
+      "provider": {
+        "logo": "/img/neptune.svg",
+        "logo_include_text": true,
+        "name": "Neptune Networks",
+        "asn": 21700,
+      },
+      "locations": ["New York, US"],
+      "services": ["VPS"],
+      "routes": "Full",
+      "bgpFeatures": [
+        "BGP Communities",
+        "BGP Community Passthrough",
+        "Downstream Support",
+      ],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "Fully automated BGP pipeline from sign up to announcement.",
+      "pricing": "Starting at $8 USD",
+      "link": "https://neptunenetworks.org",
+    },
   ];
 
 export default data;
