@@ -337,7 +337,7 @@ const data: ProviderData[] = [
         "asn": 52025
       },
       "locations": ["Toronto, CA", "Fremont, US", "London, GB"],
-      "Services": ["LIR Services", "VPS", "Transit"],
+      "services": ["LIR Services", "VPS", "Transit"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
