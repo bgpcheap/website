@@ -332,7 +332,7 @@ const data: ProviderData[] = [
     {
       "provider": {
         "logo": "/img/paradox.svg",
-        "logo_include_text": false,
+        "logo_include_text": true,
         "name": "ParadoxNetworks",
         "asn": 52025
       },
