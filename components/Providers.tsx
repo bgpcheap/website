@@ -329,6 +329,24 @@ const data: ProviderData[] = [
       "link": "https://neptunenetworks.org",
       "startPrice": 800
     },
+    {
+      "provider": {
+        "logo": "/img/paradox.svg",
+        "logo_include_text": false,
+        "name": "ParadoxNetworks",
+        "asn": 52025
+      },
+      "locations": ["Toronto, CA", "Fremont, US", "London, GB"],
+      "services": ["LIR Services", "VPS", "Transit"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "Can provide access to IX exchanges ONIX, DE-CIX, LINX, LONAP and FREMIX",
+      "pricing": "$4.50 USD/month for VPS",
+      "startPrice": 450,
+      "link": "https://my.pdxnet.co.uk/order/forms/"
+    },
   ];
 
 export default data;
