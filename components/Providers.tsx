@@ -358,7 +358,7 @@ const data: ProviderData[] = [
       "services": ["VPS", "IP Transit", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['Downstream Support'],
-      "bgpFee": "None",
+      "bgpFee": "10,00 EUR",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "Can provide access to IX exchanges Speed-IX",
       "pricing": "Starting at 10,00 EUR/month",
