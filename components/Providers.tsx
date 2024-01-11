@@ -347,6 +347,24 @@ const data: ProviderData[] = [
       "startPrice": 450,
       "link": "https://my.pdxnet.co.uk/order/forms/"
     },
+    {
+      "provider": {
+        "logo": "https://cdn.dutchis.net/dutchis/banner-black.svg",
+        "logo_include_text": true,
+        "name": "DutchIS",
+        "asn": 198468
+      },
+      "locations": ["Apeldoorn, NL"], 
+      "services": ["VPS", "IP Transit", "IXP Access"],
+      "routes": "Full + default",
+      "bgpFeatures": ['Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "Can provide access to IX exchanges Speed-IX",
+      "pricing": "Starting at 10,00 EUR/month",
+      "startPrice": 1000,
+      "link": "https://dutchis.net"
+    },
   ];
 
 export default data;
