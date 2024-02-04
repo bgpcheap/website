@@ -43,7 +43,7 @@ const data: ProviderData[] = [
         "name": "Cloudie Networks",
         "asn": 924
       },
-      "locations": ["Toronto, CA", "Fremont, US"],
+      "locations": ["Toronto, CA", "Fremont, US", "Kansas City, US"],
       "services": ["LIR Services", "VPS"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
