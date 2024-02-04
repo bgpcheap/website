@@ -418,6 +418,24 @@ const data: ProviderData[] = [
       "pricing": "Starting at $5/mo USD",
       "startPrice": 500,
       "link": "https://easyvm.net/"
+    },
+    {
+      "provider": {
+        "logo": "/img/hosthatch.svg",
+        "logo_include_text": true,
+        "name": "HostHatch",
+        "asn": 63473 
+      },
+      "locations": ["Amsterdam, NL", "Vienna, AT", "Stockholm, SE", "Zurich, CH", "Los Angeles, US", "New York, US", "Chicago, US", "Hong Kong, HK", "Tokyo, JP", "Sydney, AU", "Singapore, SG", "London, GB", "Oslo, NO"],
+      "services": ["VPS"],
+      "routes": "Default",
+      "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "$10 USD/mo with $50 USD setup fee",
+      "bgpFilters": ["RPKI", "LOA Required"],
+      "notes": "",
+      "pricing": "Starting at $4/mo USD",
+      "startPrice": 400,
+      "link": "https://hosthatch.com/"
     }
   ];
 
