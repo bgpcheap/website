@@ -44,7 +44,7 @@ const data: ProviderData[] = [
         "asn": 924
       },
       "locations": ["Toronto, CA", "Fremont, US", "Kansas City, US"],
-      "services": ["Baremetal", "VPS"],
+      "services": ["Baremetal", "VPS", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
@@ -336,7 +336,7 @@ const data: ProviderData[] = [
         "asn": 52025
       },
       "locations": ["Toronto, CA", "Fremont, US", "London, GB", "Kansas City, US", "Frankfurt, DE", "Amsterdam, NL", "Zurich, CH"],
-      "services": ["LIR Services", "VPS", "Transit"],
+      "services": ["LIR Services", "VPS", "Transit", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
