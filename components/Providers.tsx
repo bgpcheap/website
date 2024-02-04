@@ -382,6 +382,24 @@ const data: ProviderData[] = [
       "pricing": "Starting at 3.9 EUR",
       "startPrice": 390,
       "link": "https://melbicom.net/"
+    },
+    {
+      "provider": {
+        "logo": "/img/xentain.png",
+        "logo_include_text": true,
+        "name": "Xentain",
+        "asn": 15353 
+      },
+      "locations": ["Dallas, US", "Fremont, US", "Vancouver, CA", "Beauharnois, CA"],
+      "services": ["VPS", "Baremetal", "Colocation", "IXP Access", "IP Transit"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "Free BGP in Dallas, Vancouver, and Fremont.\nUNM-Exch (unmetered.exchange) ports available for Vancouver services",
+      "pricing": "Starting at $1.25/mo USD",
+      "startPrice": 125,
+      "link": "https://melbicom.net/"
     }
   ];
 
