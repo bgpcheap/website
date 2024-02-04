@@ -46,7 +46,7 @@ const data: ProviderData[] = [
       "locations": ["Toronto, CA", "Fremont, US", "Kansas City, US"],
       "services": ["LIR Services", "VPS"],
       "routes": "Full + default",
-      "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
+      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
 
