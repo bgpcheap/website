@@ -211,7 +211,7 @@ const data: ProviderData[] = [
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
-      "bgpFilters": ["RPKI"],
+      "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
       "pricing": "Starting at $10 USD",
       "startPrice": 1000,
