@@ -96,6 +96,12 @@ const MyTable: React.FC = () => {
                                 ))}
 
                             </div>
+                            {item.bgpFee != "None" && (<>
+                                <p className="text-xs font-medium uppercase text-gray-500 tracking-wide">BGP Fee</p>
+                                <div className="flex gap-3 flex-wrap mt-2 mb-4">
+                                    {item.bgpFee.split('\n').map((str: string, index: number) => <p key={index} className="text-sm text-gray-800">{str}</p>)}
+                                </div></>
+                            )}
                             {item.pricing.length > 0 && (<>
                                 <p className="text-xs font-medium uppercase text-gray-500 tracking-wide">Pricing</p>
                                 <div className="flex gap-3 flex-wrap mt-2 mb-4">
