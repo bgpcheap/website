@@ -68,7 +68,7 @@ const data: ProviderData[] = [
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "Can provide access to numerous IXs such as LocIX, DE-CIX, NL-ix, FogIXP and LoNAP",
+      "notes": "Can provide access to numerous IXs such as LocIX, DE-CIX, NL-ix, FogIXP and LoNAP\nCan also provide access to RETN, Cogent and Arelion direct",
       "pricing": "Starting at 4 CHF/month\n40 CHF/year for AS registrations",
       "startPrice": 443,
       "link": "https://my.ifog.ch/order/forms/a/OTM5"
@@ -224,13 +224,13 @@ const data: ProviderData[] = [
         "name": "F4 Networks",
         "asn": 21738
       },
-      "locations": ["Kansas City, US", "San Francisco, US"],
+      "locations": ["Kansas City, US"],
       "services": ["VPS", "Baremetal", "Tunnels"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "",
+      "notes": "Can also provide access to Arelion",
       "pricing": "Starting at $6 USD",
       "startPrice": 600,
       "link": "https://store.f4.network/"
