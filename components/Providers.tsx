@@ -38,8 +38,8 @@ const data: ProviderData[] = [
     },
     {
       "provider": {
-        "logo": "/img/cloudie-networks.png",
-        "logo_include_text": false,
+        "logo": "/img/cloudie-networks-black.png",
+        "logo_include_text": true,
         "name": "Cloudie Networks",
         "asn": 924
       },
