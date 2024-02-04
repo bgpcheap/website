@@ -44,14 +44,13 @@ const data: ProviderData[] = [
         "asn": 924
       },
       "locations": ["Toronto, CA", "Fremont, US", "Kansas City, US"],
-      "services": ["LIR Services", "VPS"],
+      "services": ["Baremetal", "VPS"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-
       "notes": "VMs can have access to FREMIX/ONIX",
-      "pricing": "$5USD/month for VPS, $35 USD for AS",
+      "pricing": "$5USD/month for VPS",
       "startPrice": 500,
       "link": "https://my.cloudie.sh/aff.php?aff=8"
     },
