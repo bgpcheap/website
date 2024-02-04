@@ -348,7 +348,7 @@ const data: ProviderData[] = [
     },
     {
       "provider": {
-        "logo": "https://cdn.dutchis.net/dutchis/banner-black.svg",
+        "logo": "/img/dutchis.svg",
         "logo_include_text": true,
         "name": "DutchIS",
         "asn": 198468
