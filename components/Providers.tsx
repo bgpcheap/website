@@ -398,7 +398,7 @@ const data: ProviderData[] = [
       "notes": "Free BGP in Dallas, Vancouver, and Fremont.\nUNM-Exch (unmetered.exchange) ports available for Vancouver services",
       "pricing": "Starting at $1.25/mo USD",
       "startPrice": 125,
-      "link": "https://melbicom.net/"
+      "link": "https://xentain.com/"
     },
     {
       "provider": {
