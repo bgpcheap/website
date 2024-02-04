@@ -400,6 +400,24 @@ const data: ProviderData[] = [
       "pricing": "Starting at $1.25/mo USD",
       "startPrice": 125,
       "link": "https://melbicom.net/"
+    },
+    {
+      "provider": {
+        "logo": "/img/easyvm.svg",
+        "logo_include_text": true,
+        "name": "EasyVM",
+        "asn": 26930 
+      },
+      "locations": ["New York, US"],
+      "services": ["VPS", "Baremetal"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["RPKI", "LOA Required"],
+      "notes": "",
+      "pricing": "Starting at $5/mo USD",
+      "startPrice": 500,
+      "link": "https://easyvm.net/"
     }
   ];
 
