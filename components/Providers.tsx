@@ -429,7 +429,7 @@ const data: ProviderData[] = [
       "services": ["VPS"],
       "routes": "Default",
       "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
-      "bgpFee": "$10 USD/mo with $50 USD setup fee",
+      "bgpFee": "$10 USD setup fee",
       "bgpFilters": ["RPKI", "LOA Required"],
       "notes": "",
       "pricing": "Starting at $4/mo USD",
