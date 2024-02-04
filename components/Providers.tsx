@@ -364,6 +364,24 @@ const data: ProviderData[] = [
       "pricing": "Starting at 10,00 EUR/month",
       "startPrice": 1000,
       "link": "https://dutchis.net"
+    },
+    {
+      "provider": {
+        "logo": "/img/melibcom.svg",
+        "logo_include_text": true,
+        "name": "Melbicom",
+        "asn": 8849 
+      },
+      "locations": ["Amsterdam, NL", "Moscow, RU", "Frankfurt, DE", "Sofia, BG", "Palermo, IT", "Madrid, ES", "Vilnius, LT", "Riga, LV", "Warsaw, PL", "Singapore, SG", "Lagos, NG", "Atlanta, US", "Los Angeles, US", "Fujairah, AE", "Mumbai, IN"],
+      "services": ["VPS", "Baremetal", "DNS"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Community Passthrough'],
+      "bgpFee": "5 EUR/mo with 10 EUR setup fee",
+      "bgpFilters": ["RPKI"],
+      "notes": "",
+      "pricing": "Starting at 3.9 EUR",
+      "startPrice": 390,
+      "link": "https://melbicom.net/"
     }
   ];
 
