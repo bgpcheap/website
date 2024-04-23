@@ -453,6 +453,24 @@ const data: ProviderData[] = [
       "pricing": "Starting at $6/mo USD",
       "startPrice": 600,
       "link": "https://urdn.com.ua/"
+    },
+    {
+      "provider": {
+        "logo": "/img/servperso.svg",
+        "logo_include_text": true,
+        "name": "Servperso",
+        "asn": 34872 
+      },
+      "locations": ["Meppel, NL", "Dusseldorf, DE"],
+      "services": ["VPS", "IP Transit", "IXP Access", "Tunnels"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "Can provide access to IX exchanges LocIX-Fra, LocIX-Dus and LocIX-NL",
+      "pricing": "Starting from 10€\n Setup fee 10€",
+      "startPrice": 1000,
+      "link": "https://www.servperso.net/"
     }
   ];
 
