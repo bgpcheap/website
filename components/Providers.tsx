@@ -277,8 +277,8 @@ const data: ProviderData[] = [
         "name": "GetServers",
         "asn": 48605
       },
-      "locations": ["Manchester, GB"],
-      "services": ["VPS", "Baremetal"],
+      "locations": ["Manchester, GB", "London, GB"],
+      "services": ["VPS", "Baremetal", "Colocation", "IXP Access", "IP Transit"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
