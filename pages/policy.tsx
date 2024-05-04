@@ -14,7 +14,10 @@ export default function Home() {
     <>
       <Header />
       <main className="max-w-screen-xl px-8 mx-auto">
+      <h2 className="font-semibold mb-4 text-red-800 text-center mt-20">Please note: This project does not initiate communication via support tickets or live chat. Any individual claiming to be an 'auditor' for us is fraudulent.</h2>
+  
         <div className='bg-zinc-50 text-black p-10 md:mt-20 pt-5 mt-20 border border-gray-200 rounded-lg'>
+  
             <h3 id="policy-for-adding-hosting-providers-to-bgp-cheap-directory" className="text-2xl font-semibold mb-4">Policy for Adding Hosting Providers to BGP.Cheap Directory</h3>
             <h4 id="i-purpose" className="text-lg font-semibold mt-4">I. Purpose</h4>
             <p className="mb-4">The purpose of this policy is to outline the criteria for adding hosting providers to the bgp.cheap directory. This policy ensures that the listed providers offer affordable server options with BGP sessions specifically tailored for newcomers and hobbyists.</p>
