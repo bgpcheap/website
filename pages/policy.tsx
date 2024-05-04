@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Header />
       <main className="max-w-screen-xl px-8 mx-auto">
-      <h2 className="font-semibold mb-4 text-red-800 text-center mt-20">Please note: This project does not initiate communication via support tickets or live chat. Any individual claiming to be an 'auditor' for us is fraudulent.</h2>
+      <h2 className="font-semibold mb-4 text-red-800 text-center mt-20">Please note: This project does not initiate communication via support tickets or live chat. Any individual claiming to be an &apos;auditor&apos; for us is fraudulent.</h2>
   
         <div className='bg-zinc-50 text-black p-10 md:mt-20 pt-5 mt-20 border border-gray-200 rounded-lg'>
   
