@@ -165,7 +165,7 @@ body:
     id: policyAgreement
     attributes:
       label: Policy
-      description: By submitting this issue, you have read the policy and the provider falls within the [Policy](https://https://bgp.cheap/policy) to be added
+      description: By submitting this issue, you have read the policy and the provider falls within the [Policy](https://bgp.cheap/policy) to be added
       options:
         - label: "I agree that the provider falls within this policy"
     validations:
