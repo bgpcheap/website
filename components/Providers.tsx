@@ -265,7 +265,7 @@ const data: ProviderData[] = [
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "",
+      "notes": "Can offer access to France-IX",
       "pricing": "Starting at 3 EUR",
       "startPrice": 317,
       "link": "https://www.virtua.cloud/?ref=6uqf3mtl"
@@ -471,6 +471,24 @@ const data: ProviderData[] = [
       "pricing": "Starting from 10€\n Setup fee 10€",
       "startPrice": 1000,
       "link": "https://www.servperso.net/"
+    },
+    {
+      "provider": {
+        "logo": "/img/hyehost.png",
+        "logo_include_text": true,
+        "name": "Hyehost",
+        "asn": 47272 
+      },
+      "locations": ["Kansas City, US", "Frankfurt, DE", "Amsterdam, NL", "London, GB"],
+      "services": ["VPS", "IP Transit", "Tunnels"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "",
+      "pricing": "Starting from $1.5",
+      "startPrice": 150,
+      "link": "https://hyehost.org/"
     }
   ];
 

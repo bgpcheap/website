@@ -41,7 +41,6 @@ const MyTable: React.FC = () => {
 
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 grid-flow-rows w-full gap-3 mb-10">
-
                 {filteredData.sort(SortBy("startPrice")).map((item: any, index: number) => (
                     <div key={index} className='bg-zinc-50 p-4 flex flex-col rounded-lg border border-gray-200'>
                         <div className="grid grid-cols-3">
