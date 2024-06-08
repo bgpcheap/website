@@ -301,9 +301,9 @@ const data: ProviderData[] = [
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "£25 for ASN + /48\nLINX ports available for VPS and baremetal",
-      "pricing": "Starting at £8 GBP",
-      "startPrice": 970,
+      "notes": "£15 for ASN + /48\nLONAP and LINX ports available for VPS and baremetal",
+      "pricing": "Starting at £6 GBP",
+      "startPrice": 6,
       "link": "https://lagrange.cloud/"
     },
     {
