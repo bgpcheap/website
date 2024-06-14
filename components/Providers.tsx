@@ -272,24 +272,6 @@ const data: ProviderData[] = [
     },
     {
       "provider": {
-        "logo": "/img/getservers.png",
-        "logo_include_text": true,
-        "name": "GetServers",
-        "asn": 48605
-      },
-      "locations": ["Manchester, GB", "London, GB"],
-      "services": ["VPS", "Baremetal", "Colocation", "IXP Access", "IP Transit"],
-      "routes": "Full + default",
-      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
-      "bgpFee": "None",
-      "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "",
-      "pricing": "Starting at £2.50 GBP",
-      "startPrice": 303,
-      "link": "https://getservers.co.uk/"
-    },
-    {
-      "provider": {
         "logo": "/img/lagrange.png",
         "logo_include_text": false,
         "name": "Lagrange",
