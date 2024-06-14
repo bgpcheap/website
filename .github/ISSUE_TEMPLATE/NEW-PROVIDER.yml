@@ -15,7 +15,14 @@ body:
       label: "Provider Name"
     validations:
       required: true
-
+      
+  - type: input
+    id: logo
+    attributes:
+      label: "Provider Logo (preferrable dark)"
+    validations:
+      required: true
+      
   - type: input
     id: url
     attributes:
@@ -160,6 +167,16 @@ body:
       placeholder: Enter any notes about the provider here
     validations:
       required: false
+
+  - type: checkboxes
+    id: logoAgreement
+    attributes:
+      label: Logo permission
+      description: Do you agree that we can use your logo on our site?
+      options:
+        - label: "I agree that bgp.cheap can use our logo on the website"
+    validations:
+      required: true
 
   - type: checkboxes
     id: policyAgreement
