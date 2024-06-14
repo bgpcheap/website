@@ -471,6 +471,42 @@ const data: ProviderData[] = [
       "pricing": "Starting from $1.5",
       "startPrice": 150,
       "link": "https://hyehost.org/"
+    },
+    {
+      "provider": {
+        "logo": "/img/system36.svg",
+        "logo_include_text": true,
+        "name": "System36",
+        "asn": 59678 
+      },
+      "locations": ["Piscataway, US"],
+      "services": ["VPS", "Baremetal"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "",
+      "pricing": "Starting from $6.99",
+      "startPrice": 699,
+      "link": "https://36.services/"
+    },
+    {
+      "provider": {
+        "logo": "/img/circlecityservers.png",
+        "logo_include_text": true,
+        "name": "CircleCityServers",
+        "asn": 26006 
+      },
+      "locations": ["Indianapolis, US"],
+      "services": ["VPS"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "",
+      "pricing": "Starting from $7 for 1C/1G",
+      "startPrice": 700,
+      "link": "https://circlecityservers.com/"
     }
   ];
 
