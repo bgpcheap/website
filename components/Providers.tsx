@@ -504,8 +504,8 @@ const data: ProviderData[] = [
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
-      "pricing": "Starting from $7 for 1C/1G",
-      "startPrice": 700,
+      "pricing": "Starting from $6 for 1C/1G",
+      "startPrice": 600,
       "link": "https://circlecityservers.com/"
     },
     {
