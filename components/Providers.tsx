@@ -458,18 +458,18 @@ const data: ProviderData[] = [
       "provider": {
         "logo": "/img/hyehost.png",
         "logo_include_text": true,
-        "name": "Hyehost",
+        "name": "HYEHOST",
         "asn": 47272 
       },
-      "locations": ["Kansas City, US", "Frankfurt, DE", "Amsterdam, NL", "London, GB"],
-      "services": ["VPS", "IP Transit", "Tunnels"],
+      "locations": ["Toronto, CA", "Fremont, US","Kansas City, US", "Frankfurt, DE", "Amsterdam, NL", "London, GB"],
+      "services": ["VPS", "IP Transit", "Tunnels", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "",
-      "pricing": "Starting from $1.5",
-      "startPrice": 150,
+      "notes": "Can provide access to IX exchanges ONIX, FREMIX, LONAP, KCIX, EraIX, FrysIX and FogIX. ",
+      "pricing": "Starting from $2",
+      "startPrice": 200,
       "link": "https://hyehost.org/"
     },
     {
