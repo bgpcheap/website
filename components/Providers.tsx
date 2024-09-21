@@ -525,6 +525,24 @@ const data: ProviderData[] = [
       "pricing": "Starting from 5.43 GBP",
       "startPrice": 543,
       "link": "https://myhostingspace.co.uk/"
+    },
+    {
+      "provider": {
+        "logo": "/img/skywolfcloud.png",
+        "logo_include_text": true,
+        "name": "Skywolf Cloud",
+        "asn": 7720
+      },
+      "locations": ["Hong Kong, HK", "Fremont, US"],
+      "services": ["VPS", "IP Transit", "Colocation"],
+      "routes": "Full",
+      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "AS-SET must be reasonable size. BGP Session on VPS cannot be used for commercial purposes.",
+      "pricing": "Starting from $4.20 USD",
+      "startPrice": 420,
+      "link": "https://hk.skywolf.cloud/"
     }
   ];
 
