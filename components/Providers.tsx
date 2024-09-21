@@ -547,7 +547,7 @@ const data: ProviderData[] = [
     {
       "provider": {
         "logo": "/img/swehosting.png",
-        "logo_include_text": true,
+        "logo_include_text": false,
         "name": "SweHosting",
         "asn": 208453
       },
