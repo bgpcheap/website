@@ -511,11 +511,11 @@ const data: ProviderData[] = [
     {
       "provider": {
         "logo": "/img/myhostingspace.png",
-        "logo_include_text": false,
+        "logo_include_text": true,
         "name": "MyHostingSpace",
         "asn": 48070
       },
-      "locations": ["Peterborough, UK"],
+      "locations": ["Peterborough, GB"],
       "services": ["VPS", "Baremetal", "Colocation"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
