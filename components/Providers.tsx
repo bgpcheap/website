@@ -507,6 +507,24 @@ const data: ProviderData[] = [
       "pricing": "Starting from $7 for 1C/1G",
       "startPrice": 700,
       "link": "https://circlecityservers.com/"
+    },
+    {
+      "provider": {
+        "logo": "/img/myhostingspace.png",
+        "logo_include_text": false,
+        "name": "MyHostingSpace",
+        "asn": 48070
+      },
+      "locations": ["Peterborough, UK"],
+      "services": ["VPS", "Baremetal", "Colocation"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
+      "notes": "",
+      "pricing": "Starting from 5.43 GBP",
+      "startPrice": 543,
+      "link": "https://myhostingspace.co.uk/"
     }
   ];
 
