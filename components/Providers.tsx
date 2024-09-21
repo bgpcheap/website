@@ -543,6 +543,24 @@ const data: ProviderData[] = [
       "pricing": "Starting from $4.20 USD",
       "startPrice": 420,
       "link": "https://hk.skywolf.cloud/"
+    },
+    {
+      "provider": {
+        "logo": "/img/swehosting.png",
+        "logo_include_text": true,
+        "name": "SweHosting",
+        "asn": 208453
+      },
+      "locations": ["Stockholm, SE"],
+      "services": ["VPS", "Baremetal", "IP Transit", "IXP Access"],
+      "routes": "Partial + default",
+      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "",
+      "pricing": "Starting from 49 SEK",
+      "startPrice": 500,
+      "link": "https://swehosting.se/"
     }
   ];
 
