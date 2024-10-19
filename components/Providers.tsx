@@ -561,6 +561,24 @@ const data: ProviderData[] = [
       "pricing": "Starting from 49 SEK",
       "startPrice": 500,
       "link": "https://swehosting.se/"
+    },
+    {
+      "provider": {
+        "logo": "/img/gamerhost-pro.svg",
+        "logo_include_text": true,
+        "name": "GamerHost.pro",
+        "asn": 50338
+      },
+      "locations": ["Prague, CZ"],
+      "services": ["VPS", "Baremetal", "Tunnels", "IP Transit", "Colocation"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["RPKI", "LOA Required"],
+      "notes": "",
+      "pricing": "Starting from 139 CZK",
+      "startPrice": 600,
+      "link": "https://gamerhost.pro/"
     }
   ];
 
