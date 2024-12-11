@@ -284,8 +284,8 @@ const data: ProviderData[] = [
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "£15 for ASN + /48\nLONAP and LINX ports available for VPS and baremetal",
-      "pricing": "Starting at £6 GBP",
-      "startPrice": 600,
+      "pricing": "Starting at £3 GBP",
+      "startPrice": 300,
       "link": "https://lagrange.cloud/"
     },
     {
