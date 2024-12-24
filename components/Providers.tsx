@@ -450,8 +450,8 @@ const data: ProviderData[] = [
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "Can provide access to IX exchanges LocIX-Fra, LocIX-Dus and LocIX-NL",
-      "pricing": "Starting from 10€\n Setup fee 10€",
-      "startPrice": 1000,
+      "pricing": "Starting from €4",
+      "startPrice": 400,
       "link": "https://www.servperso.net/"
     },
     {
