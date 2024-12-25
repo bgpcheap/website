@@ -597,6 +597,24 @@ const data: ProviderData[] = [
       "pricing": "Dedicated servers starting from 15 EUR monthly, and LIR services starting from 60 EUR annually.",
       "startPrice": 1500,
       "link": "https://myrootpw.com/"
+    },
+    {
+      "provider": {
+        "logo": "/img/lyratris.png",
+        "logo_include_text": true,
+        "name": "Lyratris",
+        "asn": 200950
+      },
+      "locations": ["Frankfurt, DE"],
+      "services": ["VPS", "Baremetal", "IXP Access"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough'],
+      "bgpFee": "$10 USD setup fee",
+      "bgpFilters": ["RPKI"],
+      "notes": "Can provide access to LocIX Frankfurt",
+      "pricing": "Starting at $5 USD",
+      "startPrice": 500,
+      "link": "https://lyratris.com/"
     }
   ];
 
