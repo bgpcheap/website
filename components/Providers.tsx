@@ -68,7 +68,7 @@ const data: ProviderData[] = [
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "Can provide access to numerous IXs such as LocIX, DE-CIX, NL-ix, FogIXP and LoNAP\nCan also provide access to RETN, Cogent and Arelion direct",
-      "pricing": "Starting at 4 CHF/month\n40 CHF/year for AS registrations",
+      "pricing": "Starting at 3.50 CHF/month\n77 CHF/year for AS registrations",
       "startPrice": 443,
       "link": "https://my.ifog.ch/order/forms/a/OTM5"
     },
