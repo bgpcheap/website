@@ -61,7 +61,7 @@ const data: ProviderData[] = [
         "name": "iFog GmbH",
         "asn": 34927
       },
-      "locations": [ "Singapore, SG", "Barcelona, ES", "Frankfurt, DE", "London, GB", "Zurich, CH", "Sydney, AU", "Oslo, NO", "Amsterdam, NL", "Fremont, US", "Kansas City, US"],
+      "locations": [ "Singapore, SG", "Barcelona, ES", "Frankfurt, DE", "London, GB", "Zurich, CH", "Sydney, AU", "Oslo, NO", "Amsterdam, NL", "Fremont, US", "Kansas City, US", "Ashburn, US", "Houston, US", "Toronto, CA"],
       "services": ["LIR Services", "IXP Access", "VPS", "Baremetal"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
