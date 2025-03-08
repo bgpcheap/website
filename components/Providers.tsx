@@ -615,6 +615,24 @@ const data: ProviderData[] = [
       "pricing": "Starting at $5 USD",
       "startPrice": 500,
       "link": "https://lyratris.com/"
+    },
+    {
+      "provider": {
+        "logo": "/img/cloudmate.png",
+        "logo_include_text": true,
+        "name": "CloudMate",
+        "asn": 214441
+      },
+      "locations": ["Derby, UK", "Noida, IN"],
+      "services": ["VPS", "Baremetal", "LIR Services", "IP Transit", "Colocation"],
+      "routes": "Full + default",
+      "bgpFeatures": ["Downstream Support"],
+      "bgpFee": "$10 USD setup fee",
+      "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
+      "notes": "",
+      "pricing": "Starting at $5 USD",
+      "startPrice": 500,
+      "link": "https://cloudmate.in/"
     }
   ];
 
