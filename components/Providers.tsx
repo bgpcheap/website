@@ -623,7 +623,7 @@ const data: ProviderData[] = [
         "name": "CloudMate",
         "asn": 214441
       },
-      "locations": ["Derby, UK", "Noida, IN"],
+      "locations": ["Derby, GB", "Noida, IN"],
       "services": ["VPS", "Baremetal", "LIR Services", "IP Transit", "Colocation"],
       "routes": "Full + default",
       "bgpFeatures": ["Downstream Support"],
