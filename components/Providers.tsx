@@ -20,42 +20,6 @@ interface ProviderData {
 const data: ProviderData[] = [
     {
       "provider": {
-        "logo": "/img/accuris-hosting.svg",
-        "logo_include_text": true,
-        "name": "Accuris Hosting",
-        "asn": 52210
-      },
-      "locations": ["Ottawa, CA"],
-      "services": ["VPS", "IXP Access"],
-      "routes": "Full + default",
-      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
-      "bgpFee": "$5 USD",
-      "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "",
-      "pricing": "Starting at $2.50 USD",
-      "startPrice": 250,
-      "link": "https://clients.accuristechnologies.ca/aff.php?aff=1"
-    },
-    {
-      "provider": {
-        "logo": "/img/cloudie-networks-black.png",
-        "logo_include_text": true,
-        "name": "Cloudie Networks",
-        "asn": 924
-      },
-      "locations": ["Toronto, CA", "Fremont, US", "Kansas City, US"],
-      "services": ["Baremetal", "VPS", "IXP Access"],
-      "routes": "Full + default",
-      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
-      "bgpFee": "None",
-      "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "VMs can have access to FREMIX/ONIX",
-      "pricing": "$5USD/month for VPS",
-      "startPrice": 500,
-      "link": "https://my.cloudie.sh/aff.php?aff=8"
-    },
-    {
-      "provider": {
         "logo": "/img/ifog.png",
         "logo_include_text": true,
         "name": "iFog GmbH",
@@ -259,13 +223,13 @@ const data: ProviderData[] = [
         "name": "Virtua Cloud",
         "asn": 35661
       },
-      "locations": ["Paris, FR", "Fremont, US", "Lille, FR"],
-      "services": ["VPS"],
+      "locations": ["Paris, FR", "Fremont, US", "Lille, FR", "Frankfurt, DE", "Amsterdam, NL"],
+      "services": ["VPS", "LIR Services", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "Can offer access to France-IX",
+      "notes": "Can offer access to France-IX and DE-CIX",
       "pricing": "Starting at 3 EUR",
       "startPrice": 317,
       "link": "https://www.virtua.cloud/?ref=6uqf3mtl"
@@ -312,21 +276,21 @@ const data: ProviderData[] = [
     },
     {
       "provider": {
-        "logo": "/img/paradox.svg",
+        "logo": "/img/getvps.svg",
         "logo_include_text": true,
-        "name": "ParadoxNetworks",
+        "name": "GetVPS",
         "asn": 52025
       },
       "locations": ["Toronto, CA", "Fremont, US", "London, GB", "Kansas City, US", "Frankfurt, DE", "Amsterdam, NL", "Zurich, CH"],
-      "services": ["LIR Services", "VPS", "Transit", "IXP Access"],
+      "services": ["LIR Services", "VPS", "Transit", "IXP Access", "Baremetal"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "Can provide access to IX exchanges ONIX, DE-CIX, LINX, LONAP and FREMIX. \nVPS only available in Kansas City, Fremont, Toronto and London",
-      "pricing": "$4.50 USD/month for VPS",
-      "startPrice": 450,
-      "link": "https://my.pdxnet.co.uk/order/forms/"
+      "notes": "Can provide access to IX exchanges ONIX, DE-CIX, LINX, LONAP and FREMIX.\nCan also provide access to Cogent, GTT and Arelion direct",
+      "pricing": "£6 GBP/month for VPS",
+      "startPrice": 600,
+      "link": "https://getvps.net"
     },
     {
       "provider": {
@@ -357,48 +321,12 @@ const data: ProviderData[] = [
       "services": ["VPS", "Baremetal", "DNS"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough'],
-      "bgpFee": "5 EUR/mo with 10 EUR setup fee",
+      "bgpFee": "5 EUR/mo with 10 EUR setup fee (per session per protocol)",
       "bgpFilters": ["RPKI"],
       "notes": "",
       "pricing": "Starting at 3.9 EUR",
       "startPrice": 390,
       "link": "https://melbicom.net/"
-    },
-    {
-      "provider": {
-        "logo": "/img/xentain.png",
-        "logo_include_text": true,
-        "name": "Xentain",
-        "asn": 15353 
-      },
-      "locations": ["Dallas, US", "Fremont, US"],
-      "services": ["VPS", "Baremetal", "Colocation", "IXP Access", "IP Transit"],
-      "routes": "Full + default",
-      "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
-      "bgpFee": "None",
-      "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "Free BGP in Dallas and Fremont.",
-      "pricing": "Starting at $2.00/mo USD",
-      "startPrice": 200,
-      "link": "https://xentain.com/"
-    },
-    {
-      "provider": {
-        "logo": "/img/easyvm.svg",
-        "logo_include_text": true,
-        "name": "EasyVM",
-        "asn": 26930 
-      },
-      "locations": ["New York, US"],
-      "services": ["VPS", "Baremetal"],
-      "routes": "Full + default",
-      "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
-      "bgpFee": "None",
-      "bgpFilters": ["RPKI", "LOA Required"],
-      "notes": "",
-      "pricing": "Starting at $5/mo USD",
-      "startPrice": 500,
-      "link": "https://easyvm.net/"
     },
     {
       "provider": {
@@ -461,15 +389,15 @@ const data: ProviderData[] = [
         "name": "HYEHOST",
         "asn": 47272 
       },
-      "locations": ["Toronto, CA", "Fremont, US","Kansas City, US", "Frankfurt, DE", "Amsterdam, NL", "London, GB"],
-      "services": ["VPS", "IP Transit", "Tunnels", "IXP Access"],
+      "locations": ["Fremont, US", "Kansas City, US"],
+      "services": ["VPS", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "Can provide access to IX exchanges ONIX, FREMIX, LONAP, KCIX, EraIX, FrysIX and FogIX. ",
-      "pricing": "Starting from $2",
-      "startPrice": 200,
+      "notes": "Can provide access to IX exchanges FREMIX.",
+      "pricing": "Starting from $3.99",
+      "startPrice": 399,
       "link": "https://hyehost.org/"
     },
     {
@@ -552,7 +480,7 @@ const data: ProviderData[] = [
         "asn": 208453
       },
       "locations": ["Stockholm, SE"],
-      "services": ["VPS", "Baremetal", "IP Transit", "IXP Access"],
+      "services": ["VPS", "Baremetal", "IP Transit", "IXP Access", "Colocation"],
       "routes": "Partial + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
@@ -615,6 +543,24 @@ const data: ProviderData[] = [
       "pricing": "Starting at $5 USD",
       "startPrice": 500,
       "link": "https://lyratris.com/"
+    },
+    {
+      "provider": {
+        "logo": "/img/cloudmate.png",
+        "logo_include_text": true,
+        "name": "CloudMate",
+        "asn": 214441
+      },
+      "locations": ["Derby, GB", "Noida, IN"],
+      "services": ["VPS", "Baremetal", "LIR Services", "IP Transit", "Colocation"],
+      "routes": "Full + default",
+      "bgpFeatures": ["Downstream Support"],
+      "bgpFee": "$10 USD setup fee",
+      "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
+      "notes": "",
+      "pricing": "Starting at $5 USD",
+      "startPrice": 500,
+      "link": "https://cloudmate.in/"
     }
   ];
 
