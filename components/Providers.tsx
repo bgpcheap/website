@@ -330,24 +330,6 @@ const data: ProviderData[] = [
     },
     {
       "provider": {
-        "logo": "/img/xentain.png",
-        "logo_include_text": true,
-        "name": "Xentain",
-        "asn": 15353 
-      },
-      "locations": ["Dallas, US", "Fremont, US"],
-      "services": ["VPS", "Baremetal", "Colocation", "IXP Access", "IP Transit"],
-      "routes": "Full + default",
-      "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
-      "bgpFee": "None",
-      "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "Free BGP in Dallas and Fremont.",
-      "pricing": "Starting at $2.00/mo USD",
-      "startPrice": 200,
-      "link": "https://xentain.com/"
-    },
-    {
-      "provider": {
         "logo": "/img/easyvm.svg",
         "logo_include_text": true,
         "name": "EasyVM",
