@@ -276,21 +276,21 @@ const data: ProviderData[] = [
     },
     {
       "provider": {
-        "logo": "/img/paradox.svg",
+        "logo": "/img/getvps.svg",
         "logo_include_text": true,
-        "name": "ParadoxNetworks",
+        "name": "GetVPS",
         "asn": 52025
       },
       "locations": ["Toronto, CA", "Fremont, US", "London, GB", "Kansas City, US", "Frankfurt, DE", "Amsterdam, NL", "Zurich, CH"],
-      "services": ["LIR Services", "VPS", "Transit", "IXP Access"],
+      "services": ["LIR Services", "VPS", "Transit", "IXP Access", "Baremetal"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "Can provide access to IX exchanges ONIX, DE-CIX, LINX, LONAP and FREMIX. \nVPS only available in Kansas City, Fremont, Toronto and London",
-      "pricing": "$4.50 USD/month for VPS",
-      "startPrice": 450,
-      "link": "https://my.pdxnet.co.uk/order/forms/"
+      "notes": "Can provide access to IX exchanges ONIX, DE-CIX, LINX, LONAP and FREMIX.\nCan also provide access to Cogent, GTT and Arelion direct",
+      "pricing": "£6 GBP/month for VPS",
+      "startPrice": 600,
+      "link": "https://getvps.net"
     },
     {
       "provider": {
