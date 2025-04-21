@@ -389,15 +389,15 @@ const data: ProviderData[] = [
         "name": "HYEHOST",
         "asn": 47272 
       },
-      "locations": ["Toronto, CA", "Fremont, US","Kansas City, US", "Frankfurt, DE", "Amsterdam, NL", "London, GB"],
-      "services": ["VPS", "IP Transit", "Tunnels", "IXP Access"],
+      "locations": ["Fremont, US", "Kansas City, US"],
+      "services": ["VPS", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "Can provide access to IX exchanges ONIX, FREMIX, LONAP, KCIX, EraIX, FrysIX and FogIX. ",
-      "pricing": "Starting from $2",
-      "startPrice": 200,
+      "notes": "Can provide access to IX exchanges FREMIX.",
+      "pricing": "Starting from $3.99",
+      "startPrice": 399,
       "link": "https://hyehost.org/"
     },
     {
