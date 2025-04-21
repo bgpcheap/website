@@ -516,7 +516,7 @@ const data: ProviderData[] = [
         "asn": 208453
       },
       "locations": ["Stockholm, SE"],
-      "services": ["VPS", "Baremetal", "IP Transit", "IXP Access"],
+      "services": ["VPS", "Baremetal", "IP Transit", "IXP Access", "Colocation"],
       "routes": "Partial + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
