@@ -20,24 +20,6 @@ interface ProviderData {
 const data: ProviderData[] = [
     {
       "provider": {
-        "logo": "/img/cloudie-networks-black.png",
-        "logo_include_text": true,
-        "name": "Cloudie Networks",
-        "asn": 924
-      },
-      "locations": ["Toronto, CA", "Fremont, US", "Kansas City, US"],
-      "services": ["Baremetal", "VPS", "IXP Access"],
-      "routes": "Full + default",
-      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
-      "bgpFee": "None",
-      "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "VMs can have access to FREMIX/ONIX",
-      "pricing": "$5USD/month for VPS",
-      "startPrice": 500,
-      "link": "https://my.cloudie.sh/aff.php?aff=8"
-    },
-    {
-      "provider": {
         "logo": "/img/ifog.png",
         "logo_include_text": true,
         "name": "iFog GmbH",
