@@ -330,24 +330,6 @@ const data: ProviderData[] = [
     },
     {
       "provider": {
-        "logo": "/img/easyvm.svg",
-        "logo_include_text": true,
-        "name": "EasyVM",
-        "asn": 26930 
-      },
-      "locations": ["New York, US"],
-      "services": ["VPS", "Baremetal"],
-      "routes": "Full + default",
-      "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
-      "bgpFee": "None",
-      "bgpFilters": ["RPKI", "LOA Required"],
-      "notes": "",
-      "pricing": "Starting at $5/mo USD",
-      "startPrice": 500,
-      "link": "https://easyvm.net/"
-    },
-    {
-      "provider": {
         "logo": "/img/hosthatch.svg",
         "logo_include_text": true,
         "name": "HostHatch",
