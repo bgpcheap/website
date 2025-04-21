@@ -20,24 +20,6 @@ interface ProviderData {
 const data: ProviderData[] = [
     {
       "provider": {
-        "logo": "/img/accuris-hosting.svg",
-        "logo_include_text": true,
-        "name": "Accuris Hosting",
-        "asn": 52210
-      },
-      "locations": ["Ottawa, CA"],
-      "services": ["VPS", "IXP Access"],
-      "routes": "Full + default",
-      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
-      "bgpFee": "$5 USD",
-      "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "",
-      "pricing": "Starting at $2.50 USD",
-      "startPrice": 250,
-      "link": "https://clients.accuristechnologies.ca/aff.php?aff=1"
-    },
-    {
-      "provider": {
         "logo": "/img/cloudie-networks-black.png",
         "logo_include_text": true,
         "name": "Cloudie Networks",
