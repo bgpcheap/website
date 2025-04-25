@@ -165,8 +165,6 @@ body:
     attributes:
       label: Starting Price
       placeholder: Enter your starting price (preferably in USD)
-      value: |
-        $5/month
     validations:
       required: true
 
