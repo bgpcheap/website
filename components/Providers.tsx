@@ -561,6 +561,42 @@ const data: ProviderData[] = [
       "pricing": "Starting at $5 USD",
       "startPrice": 500,
       "link": "https://cloudmate.in/"
+    },
+    {
+      "provider": {
+        "logo": "/img/skhron.png",
+        "logo_include_text": true,
+        "name": "Skhron",
+        "asn": 215467
+      },
+      "locations": ["Stockholm, SE", "Warsaw, PL"],
+      "services": ["VPS"],
+      "routes": "Default",
+      "bgpFeatures": ['BGP Community Passthrough'],
+      "bgpFee": "None",
+      "bgpFilters": ["RPKI", "LOA Required"],
+      "notes": "",
+      "pricing": "Starting at 1.16 EUR",
+      "startPrice": 132,
+      "link": "https://skhron.eu/"
+    },
+    {
+      "provider": {
+        "logo": "/img/bharat-datacenter.png",
+        "logo_include_text": true,
+        "name": "Bharat Datacenter",
+        "asn": 151704
+      },
+      "locations": ["New Delhi, IN"],
+      "services": ["Baremetal", "IP Transit", "IXP Access", "Colocation"],
+      "routes": "Full + default",
+      "bgpFeatures": ["Downstream Support"],
+      "bgpFee": "None",
+      "bgpFilters": ["LOA Required"],
+      "notes": "",
+      "pricing": "Starting at $90 USD",
+      "startPrice": 9000,
+      "link": "https://bharatdatacenter.com/"
     }
   ];
 
