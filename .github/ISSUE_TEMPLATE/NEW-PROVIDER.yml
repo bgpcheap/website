@@ -169,6 +169,14 @@ body:
       required: true
 
   - type: textarea
+    id: bgpFee
+    attributes:
+      label: BGP Fee
+      placeholder: Provide the BGP fee (recurring and one-time), if applicable. If no fee, please enter "N/A".
+    validations:
+      required: true
+
+  - type: textarea
     id: notes
     attributes:
       label: Notes
