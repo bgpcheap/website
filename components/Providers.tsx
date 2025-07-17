@@ -348,24 +348,6 @@ const data: ProviderData[] = [
     },
     {
       "provider": {
-        "logo": "/img/udn.ico",
-        "logo_include_text": false,
-        "name": "UDN",
-        "asn": 207656 
-      },
-      "locations": ["Kyiv, UA"],
-      "services": ["VPS", "Baremetal", "Colocation", "IP Transit"],
-      "routes": "Full + default",
-      "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
-      "bgpFee": "None",
-      "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "",
-      "pricing": "Starting at $6/mo USD",
-      "startPrice": 600,
-      "link": "https://urdn.com.ua/"
-    },
-    {
-      "provider": {
         "logo": "/img/servperso.svg",
         "logo_include_text": true,
         "name": "Servperso",
