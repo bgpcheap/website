@@ -596,7 +596,7 @@ const data: ProviderData[] = [
       "notes": "VPS starting at $2.50/month. Dedicated servers starting at $100.00/month. Colocation starting at $60.00/month.",
       "pricing": "Starting at $2.50 USD",
       "startPrice": 250,
-      "link": "https://bharatdatacenter.com/"
+      "link": "https://soutarmc.com/"
     },
     {
       "provider": {
