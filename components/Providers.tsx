@@ -579,6 +579,24 @@ const data: ProviderData[] = [
       "pricing": "Starting at $90 USD",
       "startPrice": 9000,
       "link": "https://bharatdatacenter.com/"
+    },
+    {
+      "provider": {
+        "logo": "/img/smc-server-solutions.png",
+        "logo_include_text": true,
+        "name": "SMC Server Solutions",
+        "asn": 400212
+      },
+      "locations": ["New York City, US", "Sydney, AU"],
+      "services": ["VPS", "Baremetal", "Colocation"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Communities', "Downstream Support", "BGP Community Passthrough"],
+      "bgpFee": "$25 USD setup fee",
+      "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
+      "notes": "VPS starting at $2.50/month. Dedicated servers starting at $100.00/month. Colocation starting at $60.00/month.",
+      "pricing": "Starting at $2.50 USD",
+      "startPrice": 250,
+      "link": "https://bharatdatacenter.com/"
     }
   ];
 
