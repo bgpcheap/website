@@ -597,6 +597,24 @@ const data: ProviderData[] = [
       "pricing": "Starting at $2.50 USD",
       "startPrice": 250,
       "link": "https://bharatdatacenter.com/"
+    },
+    {
+      "provider": {
+        "logo": "/img/pawhost.png",
+        "logo_include_text": true,
+        "name": "PawHost",
+        "asn": 214915
+      },
+      "locations": ["Düsseldorf, DE"],
+      "services": ["VPS", "Baremetal", "Colocation"],
+      "routes": "Full",
+      "bgpFeatures": ['BGP Communities', "Downstream Support", "BGP Community Passthrough"],
+      "bgpFee": "5 EUR",
+      "bgpFilters": ["Automatic IRR"],
+      "notes": "",
+      "pricing": "Starting at 2.50 EUR",
+      "startPrice": 294,
+      "link": "https://pawhost.de/"
     }
   ];
 
