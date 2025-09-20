@@ -281,13 +281,13 @@ const data: ProviderData[] = [
         "name": "GetVPS",
         "asn": 52025
       },
-      "locations": ["Toronto, CA", "Fremont, US", "London, GB", "Kansas City, US", "Frankfurt, DE", "Amsterdam, NL", "Zurich, CH"],
-      "services": ["LIR Services", "VPS", "Transit", "IXP Access", "Baremetal"],
+      "locations": ["Toronto, CA", "Ashburn, US", "Fremont, US", "London, GB", "Kansas City, US", "Frankfurt, DE", "Amsterdam, NL", "Zurich, CH", "Stockholm, SE"],
+      "services": ["VPS", "Transit", "IXP Access", "Baremetal"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "Can provide access to IX exchanges ONIX, DE-CIX, LINX, LONAP and FREMIX.\nCan also provide access to Cogent, GTT and Arelion direct",
+      "notes": "Can provide access to IX exchanges ONIX, LINX, ERA-IX Amsterdam, LONAP and FREMIX.\nCan also provide access to Cogent, GTT and Arelion direct",
       "pricing": "£6 GBP/month for VPS",
       "startPrice": 600,
       "link": "https://getvps.net"
