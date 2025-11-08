@@ -371,7 +371,7 @@ const data: ProviderData[] = [
         "name": "HYEHOST",
         "asn": 47272 
       },
-      "locations": ["Fremont, US", "Kansas City, US"],
+      "locations": ["Fremont, US", "Kansas City, US", "Telford, GB"],
       "services": ["VPS", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
