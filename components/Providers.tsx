@@ -467,9 +467,9 @@ const data: ProviderData[] = [
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "",
-      "pricing": "Starting from 49 SEK",
-      "startPrice": 500,
+      "notes": "IXP access available for SONIX, STHIX, Netnod and SOL-IX.",
+      "pricing": "Starting from 29 SEK",
+      "startPrice": 300,
       "link": "https://swehosting.se/"
     },
     {
