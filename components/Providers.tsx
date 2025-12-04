@@ -510,21 +510,21 @@ const data: ProviderData[] = [
     },
     {
       "provider": {
-        "logo": "/img/lyratris.png",
+        "logo": "/img/calibour.png",
         "logo_include_text": true,
-        "name": "Lyratris",
+        "name": "Calibour",
         "asn": 200950
       },
       "locations": ["Frankfurt, DE"],
-      "services": ["VPS", "Baremetal", "IXP Access"],
+      "services": ["VPS"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough'],
-      "bgpFee": "$10 USD setup fee",
+      "bgpFee": "€5 EUR setup fee",
       "bgpFilters": ["RPKI"],
-      "notes": "Can provide access to LocIX Frankfurt",
-      "pricing": "Starting at $5 USD",
-      "startPrice": 500,
-      "link": "https://lyratris.com/"
+      "notes": "",
+      "pricing": "Starting at €2.50 EUR",
+      "startPrice": 250,
+      "link": "https://calibour.com/"
     },
     {
       "provider": {
