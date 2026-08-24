@@ -411,6 +411,7 @@ const data: ProviderData[] = [
       "services": ["VPS"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
+      "services": ["IP Transit", "IXP Access", "Colocation"],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
