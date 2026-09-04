@@ -36,3 +36,8 @@ next-env.d.ts
 
 # dont break cloudflare pages
 yarn.lock
+
+# local design-agent working files
+/.impeccable/
+/PRODUCT.md
+/DESIGN.md

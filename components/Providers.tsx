@@ -1,4 +1,7 @@
-interface ProviderData {
+export type BillingCurrency = 'USD' | 'EUR' | 'GBP' | 'CHF' | 'SEK' | 'CZK';
+export type BillingCadence = 'monthly' | 'quarterly' | 'annually';
+
+export interface ProviderData {
     provider: {
         logo: string;
         logo_include_text: boolean;
@@ -13,7 +16,9 @@ interface ProviderData {
     bgpFeatures: string[];
     notes: string;
     pricing: string;
-    startPrice: number; // USD in cents
+    billingCurrency?: BillingCurrency;
+    billingCadence?: BillingCadence;
+    startPrice: number; // Monthly-equivalent USD in cents
     link: string;
 }
 
@@ -32,8 +37,9 @@ const data: ProviderData[] = [
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "Can provide access to numerous IXs such as LocIX, DE-CIX, NL-ix, FogIXP and LoNAP\nCan also provide access to RETN, Cogent and Arelion direct",
-      "pricing": "Starting at 3.50 CHF/month\n77 CHF/year for AS registrations",
-      "startPrice": 443,
+      "pricing": "Starting at $4.33 USD/month\n$95.15 USD/year for AS registrations",
+      "billingCurrency": "CHF",
+      "startPrice": 433,
       "link": "https://my.ifog.ch/order/forms/a/OTM5"
     },
     {
@@ -51,8 +57,9 @@ const data: ProviderData[] = [
       "bgpFilters": ["Automatic IRR", "RPKI"],
 
       "notes": "",
-      "pricing": "Starting at 50 SEK",
-      "startPrice": 445,
+      "pricing": "Starting at $5.23 USD/month",
+      "billingCurrency": "SEK",
+      "startPrice": 523,
       "link": "https://my.karabro.se/aff.php?aff=1"
     },
     // {
@@ -97,15 +104,15 @@ const data: ProviderData[] = [
         "name": "Vultr",
         "asn": 20473 
       },
-      "locations": ["Chicago, US", "Seattle, US", "Melbourne, AU", "Frankfurt, DE", "Atlanta, US", "Warsaw, PL", "Seoul, KR", "Miami, US", "Stockholm, SE", "Bangalore, IN", "Manchester, GB", "Santiago, CL", "Delhi NCR, IN", "Johannesburg, ZA", "Honolulu, US", "Mumbai, IN", "Sao Paulo, BR", "Mexico City, MX", "Madrid, ES", "Toronto, CA", "Silicon Valley, US", "London, GB", "Dallas, US", "Sydney, AU", "Paris, FR", "Amsterdam, NL", "Los Angeles, US", "New Jersey, US", "Singapore, SG", "Tokyo, JP", "Osaka, JP", "Tel Aviv, IL"],
+      "locations": ["Chicago, US", "Seattle, US", "Melbourne, AU", "Frankfurt, DE", "Atlanta, US", "Warsaw, PL", "Seoul, KR", "Miami, US", "Stockholm, SE", "Bangalore, IN", "Manchester, GB", "Santiago, CL", "Delhi NCR, IN", "Johannesburg, ZA", "Honolulu, US", "Mumbai, IN", "Sao Paulo, BR", "Mexico City, MX", "Madrid, ES", "Milan, IT", "Toronto, CA", "Silicon Valley, US", "London, GB", "Dallas, US", "Sydney, AU", "Paris, FR", "Amsterdam, NL", "Los Angeles, US", "New Jersey, US", "Singapore, SG", "Tokyo, JP", "Osaka, JP", "Tel Aviv, IL"],
       "services": ["VPS", "Baremetal", "DNS"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough'],
       "bgpFee": "None",
       "bgpFilters": ["RPKI", "LOA Required"],
-      "notes": "",
-      "pricing": "Starting at $5 USD",
-      "startPrice": 500,
+      "notes": "The lowest generally available paid BGP-eligible plan is IPv6-only. The conditional free tier is not used for this comparison.",
+      "pricing": "IPv6-only compute starting at $2.50 USD/month",
+      "startPrice": 250,
       "link": "https://www.vultr.com/?ref=6883827"
     },
     {
@@ -121,14 +128,14 @@ const data: ProviderData[] = [
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "Minimum s1.small for VPS. Can also provide access to ONIX",
-      "pricing": "Starting at $3.50 USD",
+      "notes": "Minimum s1.small for VPS. Can also provide access to ONIX. The current public catalog could not be verified during the 4 Sep 2026 audit, so the submitted VPS and bare-metal service types and price are retained.",
+      "pricing": "Last submitted price: $3.50 USD/month",
       "startPrice": 350,
       "link": "https://xenyth.net/?affid=455"
     },
     {
       "provider": {
-        "logo": "https://v.ps/assets/img/logo_dark.7d4c766e.svg",
+        "logo": "/img/vps.svg",
         "logo_include_text": true,
         "name": "V.ps",
         "asn": 3204
@@ -137,11 +144,12 @@ const data: ProviderData[] = [
       "services": ["VPS", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
-      "bgpFee": "50 EUR",
+      "bgpFee": "$58.11 USD",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "Can provide access to IX exchanges DE-CIX, LocIX and AMS-IX",
-      "pricing": "Starts at 5.95 EUR",
-      "startPrice": 629,
+      "pricing": "Starting at $8.08 USD/month",
+      "billingCurrency": "EUR",
+      "startPrice": 808,
       "link": "https://vps.hosting/?affid=1286&affplan=1"
     },
     {
@@ -152,13 +160,13 @@ const data: ProviderData[] = [
         "asn": 61138
       },
       "locations": ["Auckland, NZ"],
-      "services": ["VPS", "LIR Services"],
+      "services": ["VPS", "Baremetal", "LIR Services"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
-      "pricing": "Starting at $4.50 USD",
+      "pricing": "Starting at $4.50 USD/month",
       "startPrice": 450,
       "link": "https://zappiehost.com/bgp-peering-with-cloud-vps"
     },
@@ -176,7 +184,7 @@ const data: ProviderData[] = [
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
-      "pricing": "Starting at $10 USD",
+      "pricing": "Starting at $10.00 USD/month",
       "startPrice": 1000,
       "link": "https://pebblehost.com/"
     },
@@ -188,14 +196,14 @@ const data: ProviderData[] = [
         "asn": 21738
       },
       "locations": ["Kansas City, US"],
-      "services": ["VPS", "Baremetal", "Tunnels"],
+      "services": ["Baremetal"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "Can also provide access to Arelion",
-      "pricing": "Starting at $6 USD",
-      "startPrice": 600,
+      "notes": "Can also provide access to Arelion. The free hobbyist BGP offer was out of stock during the price audit and is not used for this comparison.",
+      "pricing": "Currently orderable servers starting at $33.00 USD/month",
+      "startPrice": 3300,
       "link": "https://store.f4.network/"
     },
     {
@@ -212,8 +220,10 @@ const data: ProviderData[] = [
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
-      "pricing": "Starting at £5 GBP",
-      "startPrice": 606,
+      "pricing": "Starting at $6.77 USD/month, charged as $81.18 USD annually",
+      "billingCurrency": "GBP",
+      "billingCadence": "annually",
+      "startPrice": 677,
       "link": "https://divergentnetworks.co.uk/"
     },
     {
@@ -230,8 +240,9 @@ const data: ProviderData[] = [
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "Can offer access to France-IX and DE-CIX",
-      "pricing": "Starting at 3 EUR",
-      "startPrice": 317,
+      "pricing": "Starting at $5.81 USD/month",
+      "billingCurrency": "EUR",
+      "startPrice": 581,
       "link": "https://www.virtua.cloud/?ref=6uqf3mtl"
     },
     {
@@ -247,9 +258,10 @@ const data: ProviderData[] = [
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "£15 for ASN + /48\nLONAP and LINX ports available for VPS and baremetal",
-      "pricing": "Starting at £3 GBP",
-      "startPrice": 300,
+      "notes": "$20.30 USD for ASN + /48\nLONAP and LINX ports available for VPS and baremetal",
+      "pricing": "Starting at $4.06 USD/month",
+      "billingCurrency": "GBP",
+      "startPrice": 406,
       "link": "https://lagrange.cloud/"
     },
     {
@@ -270,7 +282,7 @@ const data: ProviderData[] = [
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "Fully automated BGP pipeline from sign up to announcement.",
-      "pricing": "Starting at $8 USD",
+      "pricing": "Starting at $8.00 USD/month",
       "link": "https://neptunenetworks.org",
       "startPrice": 800
     },
@@ -281,15 +293,16 @@ const data: ProviderData[] = [
         "name": "GetVPS",
         "asn": 52025
       },
-      "locations": ["Toronto, CA", "Ashburn, US", "Fremont, US", "London, GB", "Kansas City, US", "Frankfurt, DE", "Amsterdam, NL", "Zurich, CH", "Stockholm, SE"],
-      "services": ["VPS", "Transit", "IXP Access", "Baremetal"],
+      "locations": ["Toronto, CA", "Ashburn, US", "Fremont, US", "London, GB", "Kansas City, US", "Frankfurt, DE", "Amsterdam, NL", "Zurich, CH", "Stockholm, SE", "Sydney, AU", "Singapore, SG", "New York, US", "Auckland, NZ"],
+      "services": ["VPS", "Transit", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "Can provide access to IX exchanges ONIX, LINX, ERA-IX Amsterdam, LONAP and FREMIX.\nCan also provide access to Cogent, GTT and Arelion direct",
-      "pricing": "£6 GBP/month for VPS",
-      "startPrice": 600,
+      "pricing": "Starting at $8.12 USD/month for VPS",
+      "billingCurrency": "GBP",
+      "startPrice": 812,
       "link": "https://getvps.net"
     },
     {
@@ -303,11 +316,12 @@ const data: ProviderData[] = [
       "services": ["VPS", "IP Transit", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['Downstream Support'],
-      "bgpFee": "10,00 EUR",
+      "bgpFee": "$11.62 USD",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "Can provide access to IX exchanges Speed-IX",
-      "pricing": "Starting at 10,00 EUR/month",
-      "startPrice": 1000,
+      "notes": "Can provide access to IX exchanges Speed-IX. Public virtual-server pricing does not state which tiers support BGP, so the comparison retains the last submitted BGP-specific price.",
+      "pricing": "Starting at $11.62 USD/month",
+      "billingCurrency": "EUR",
+      "startPrice": 1162,
       "link": "https://dutchis.net"
     },
     {
@@ -321,11 +335,11 @@ const data: ProviderData[] = [
       "services": ["VPS", "Baremetal", "DNS"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough'],
-      "bgpFee": "5 EUR/mo with 10 EUR setup fee (per session per protocol)",
+      "bgpFee": "$5.00 USD/month with $11.62 USD setup fee (per session per protocol)",
       "bgpFilters": ["RPKI"],
       "notes": "",
-      "pricing": "Starting at 3.9 EUR",
-      "startPrice": 390,
+      "pricing": "VPS starting at $6.50 USD/month",
+      "startPrice": 650,
       "link": "https://melbicom.net/"
     },
     {
@@ -342,7 +356,7 @@ const data: ProviderData[] = [
       "bgpFee": "$10 USD setup fee",
       "bgpFilters": ["RPKI", "LOA Required"],
       "notes": "",
-      "pricing": "Starting at $4/mo USD",
+      "pricing": "Starting at $4.00 USD/month",
       "startPrice": 400,
       "link": "https://hosthatch.com/"
     },
@@ -360,8 +374,10 @@ const data: ProviderData[] = [
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "Can provide access to IX exchanges LocIX-Fra, LocIX-Dus and LocIX-NL",
-      "pricing": "Starting from €4",
-      "startPrice": 400,
+      "pricing": "IPv6-only BGP Starter at $4.65 USD/month, charged as $13.95 USD quarterly\nDual-stack BGP Starter at $6.97 USD/month",
+      "billingCurrency": "EUR",
+      "billingCadence": "quarterly",
+      "startPrice": 465,
       "link": "https://www.servperso.net/"
     },
     {
@@ -371,15 +387,15 @@ const data: ProviderData[] = [
         "name": "HYEHOST",
         "asn": 47272 
       },
-      "locations": ["Fremont, US", "Kansas City, US", "Telford, GB"],
-      "services": ["VPS", "IXP Access"],
+      "locations": ["Wolverhampton, GB"],
+      "services": ["VPS", "Baremetal", "Shared Hosting", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "Can provide access to IX exchanges FREMIX.",
-      "pricing": "Starting from $3.99",
-      "startPrice": 399,
+      "pricing": "Starting at $2.99 USD/month",
+      "startPrice": 299,
       "link": "https://hyehost.org/"
     },
     {
@@ -396,7 +412,7 @@ const data: ProviderData[] = [
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
-      "pricing": "Starting from $6.99",
+      "pricing": "Starting at $6.99 USD/month",
       "startPrice": 699,
       "link": "https://36.services/"
     },
@@ -408,13 +424,13 @@ const data: ProviderData[] = [
         "asn": 26006 
       },
       "locations": ["Indianapolis, US"],
-      "services": ["VPS", "IP Transit", "IXP Access", "Colocation"],
+      "services": ["VPS", "Baremetal", "IP Transit", "IXP Access", "Colocation"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
-      "pricing": "Starting from $6 for 1C/1G",
+      "pricing": "Starting at $6.00 USD/month for 1C/1G",
       "startPrice": 600,
       "link": "https://circlecityservers.com/"
     },
@@ -429,11 +445,12 @@ const data: ProviderData[] = [
       "services": ["VPS", "Baremetal", "Colocation"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
-      "bgpFee": "None",
+      "bgpFee": "$6.77 USD setup fee",
       "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
       "notes": "",
-      "pricing": "Starting from 5.43 GBP",
-      "startPrice": 543,
+      "pricing": "Starting at $10.01 USD/month",
+      "billingCurrency": "GBP",
+      "startPrice": 1001,
       "link": "https://myhostingspace.co.uk/"
     },
     {
@@ -449,9 +466,9 @@ const data: ProviderData[] = [
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "AS-SET must be reasonable size. BGP Session on VPS cannot be used for commercial purposes.",
-      "pricing": "Starting from $4.20 USD",
-      "startPrice": 420,
+      "notes": "AS-SET must be reasonable size. BGP Session on VPS cannot be used for commercial purposes. The starting price is for the Fremont service. Hong Kong Lite plans do not support BGP.",
+      "pricing": "Fremont service starting at $2.00 USD/month",
+      "startPrice": 200,
       "link": "https://hk.skywolf.cloud/"
     },
     {
@@ -468,8 +485,9 @@ const data: ProviderData[] = [
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "IXP access available for SONIX, STHIX, Netnod and SOL-IX.",
-      "pricing": "Starting from 29 SEK",
-      "startPrice": 300,
+      "pricing": "Starting at $5.13 USD/month",
+      "billingCurrency": "SEK",
+      "startPrice": 513,
       "link": "https://swehosting.se/"
     },
     {
@@ -480,14 +498,15 @@ const data: ProviderData[] = [
         "asn": 50338
       },
       "locations": ["Prague, CZ"],
-      "services": ["VPS", "Baremetal", "Tunnels", "IP Transit", "Colocation"],
+      "services": ["VPS", "Baremetal", "Tunnels", "IP Transit", "IXP Access", "Colocation"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
-      "bgpFilters": ["RPKI", "LOA Required"],
+      "bgpFilters": ["Automatic IRR", "RPKI"],
       "notes": "",
-      "pricing": "Starting from 139 CZK",
-      "startPrice": 600,
+      "pricing": "Starting at $7.16 USD/month",
+      "billingCurrency": "CZK",
+      "startPrice": 716,
       "link": "https://gamerhost.pro/"
     },
     {
@@ -503,9 +522,10 @@ const data: ProviderData[] = [
       "bgpFeatures": [],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
-      "notes": "",
-      "pricing": "Dedicated servers starting from 15 EUR monthly, and LIR services starting from 60 EUR annually.",
-      "startPrice": 1500,
+      "notes": "The lower advertised dedicated-server tiers were sold out during the audit, so the comparison uses the lowest orderable tier.",
+      "pricing": "Currently orderable dedicated servers starting at $52.30 USD/month\nIPv6-only LIR service at $69.73 USD/year",
+      "billingCurrency": "EUR",
+      "startPrice": 5230,
       "link": "https://myrootpw.com/"
     },
     {
@@ -516,14 +536,15 @@ const data: ProviderData[] = [
         "asn": 200950
       },
       "locations": ["Frankfurt, DE"],
-      "services": ["VPS"],
+      "services": ["VPS", "Baremetal"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough'],
-      "bgpFee": "€5 EUR setup fee",
+      "bgpFee": "$5.81 USD setup fee",
       "bgpFilters": ["RPKI"],
-      "notes": "",
-      "pricing": "Starting at €2.50 EUR",
-      "startPrice": 250,
+      "notes": "The current public site does not expose retail pricing. This is the latest provider-submitted price available to the project.",
+      "pricing": "Last submitted price: $2.91 USD/month",
+      "billingCurrency": "EUR",
+      "startPrice": 291,
       "link": "https://calibour.com/"
     },
     {
@@ -540,8 +561,8 @@ const data: ProviderData[] = [
       "bgpFee": "$10 USD setup fee",
       "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
       "notes": "",
-      "pricing": "Starting at $5 USD",
-      "startPrice": 500,
+      "pricing": "Starting at $4.50 USD/month",
+      "startPrice": 450,
       "link": "https://cloudmate.in/"
     },
     {
@@ -558,8 +579,9 @@ const data: ProviderData[] = [
       "bgpFee": "None",
       "bgpFilters": ["RPKI", "LOA Required"],
       "notes": "",
-      "pricing": "Starting at 1.16 EUR",
-      "startPrice": 132,
+      "pricing": "Starting at $1.96 USD/month",
+      "billingCurrency": "EUR",
+      "startPrice": 196,
       "link": "https://skhron.eu/"
     },
     {
@@ -575,8 +597,8 @@ const data: ProviderData[] = [
       "bgpFeatures": ["Downstream Support"],
       "bgpFee": "None",
       "bgpFilters": ["LOA Required"],
-      "notes": "",
-      "pricing": "Starting at $90 USD",
+      "notes": "Custom dedicated-server pricing is not published on the provider site. This figure is from the provider submission.",
+      "pricing": "Provider-submitted price: $90.00 USD/month",
       "startPrice": 9000,
       "link": "https://bharatdatacenter.com/"
     },
@@ -594,7 +616,7 @@ const data: ProviderData[] = [
       "bgpFee": "$25 USD setup fee",
       "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
       "notes": "VPS starting at $2.50/month. Dedicated servers starting at $100.00/month. Colocation starting at $60.00/month.",
-      "pricing": "Starting at $2.50 USD",
+      "pricing": "Starting at $2.50 USD/month",
       "startPrice": 250,
       "link": "https://soutarmc.com/"
     },
@@ -609,16 +631,17 @@ const data: ProviderData[] = [
       "services": ["VPS", "Baremetal", "Colocation"],
       "routes": "Full",
       "bgpFeatures": ['BGP Communities', "Downstream Support", "BGP Community Passthrough"],
-      "bgpFee": "5 EUR",
+      "bgpFee": "$5.81 USD",
       "bgpFilters": ["Automatic IRR"],
       "notes": "",
-      "pricing": "Starting at 2.50 EUR",
-      "startPrice": 294,
+      "pricing": "Starting at $4.59 USD/month",
+      "billingCurrency": "EUR",
+      "startPrice": 459,
       "link": "https://pawhost.de/"
     },
     {
       "provider": {
-        "logo": "/img/hostal.png",
+        "logo": "/img/hostal.svg",
         "logo_include_text": true,
         "name": "Host.al",
         "asn": 213683
@@ -630,13 +653,14 @@ const data: ProviderData[] = [
       "bgpFee": "None",
       "bgpFilters": ["RPKI"],
       "notes": "BGP included with every VPS, dedicated, and colocation package. BGP community passthrough is partial/limited. Active downstream support for ASN setup, IRR, and RPKI. ICANN-accredited domain registrar (IANA #4332).",
-      "pricing": "Starting at €2.95",
-      "startPrice": 295,
+      "pricing": "Starting at $3.43 USD/month",
+      "billingCurrency": "EUR",
+      "startPrice": 343,
       "link": "https://host.al/"
     },
     {
       "provider": {
-        "logo": "/img/africloud.png",
+        "logo": "/img/africloud-mark.svg",
         "logo_include_text": true,
         "name": "AFRICLOUD",
         "asn": 209179
@@ -647,10 +671,196 @@ const data: ProviderData[] = [
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
       "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
-      "notes": "Peering at NAPAfrica Johannesburg, IXPN Lagos, DE-CIX Lisbon and DE-CIX Madrid. IPv6 included on every server.",
-      "pricing": "Starting at $10 USD",
+      "notes": "Peering at NAPAfrica Johannesburg, IXPN Lagos, DE-CIX Lisbon and DE-CIX Madrid. IPv6 included on every server. The starting price uses the recurring 50NEW promotional rate; the standard listed rate is $20.00 USD/month.",
+      "pricing": "Starting at $10.00 USD/month with recurring promotional code 50NEW",
       "startPrice": 1000,
       "link": "https://africloud.com/order"
+    },
+    {
+      "provider": {
+        "logo": "/img/elcro-digital.png",
+        "logo_include_text": true,
+        "name": "Elcro Digital",
+        "asn": 62553
+      },
+      "locations": ["Dallas, US"],
+      "services": ["VPS", "Baremetal", "IP Transit", "Colocation"],
+      "routes": "Full + default",
+      "bgpFeatures": ["BGP Community Passthrough", "Downstream Support"],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
+      "notes": "Only clean AS-SETs can be added.",
+      "pricing": "Provider-submitted price: $5.85 USD/month",
+      "startPrice": 585,
+      "link": "https://elcrodigital.com/"
+    },
+    {
+      "provider": {
+        "logo": "/img/flybirdhost.png",
+        "logo_include_text": true,
+        "name": "FlyBirdHost",
+        "asn": 14447
+      },
+      "locations": ["Hong Kong, HK", "Kansas City, US"],
+      "services": ["VPS", "IPv6-only VPS", "Baremetal", "Colocation"],
+      "routes": "Full + default",
+      "bgpFeatures": ["BGP Communities", "BGP Community Passthrough", "Downstream Support"],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "Partial-table and no-table options are also available.",
+      "pricing": "Charged as $4.84 USD quarterly, equivalent to $1.61 USD/month",
+      "billingCadence": "quarterly",
+      "startPrice": 161,
+      "link": "https://store.flybirdhost.net/"
+    },
+    {
+      "provider": {
+        "logo": "/img/sitehub.png",
+        "logo_include_text": true,
+        "name": "SiteHUB Cloud",
+        "asn": 214354
+      },
+      "locations": ["Ikeja, NG", "Fremont, US"],
+      "services": ["VPS", "Cloud Servers", "Baremetal", "LIR Services", "Domain Registration", "Colocation"],
+      "routes": "Full",
+      "bgpFeatures": ["BGP Community Passthrough", "Downstream Support"],
+      "bgpFee": "Free with plans above $20 USD/year or $2 USD/month\n$25 USD one-time fee for cheaper or promotional plans",
+      "bgpFilters": ["RPKI", "LOA Required"],
+      "notes": "BGP sessions are currently supported only in Nigeria.",
+      "pricing": "Charged as $4.00 USD annually, equivalent to $0.33 USD/month",
+      "billingCadence": "annually",
+      "startPrice": 33,
+      "link": "https://sitehub.agency/"
+    },
+    {
+      "provider": {
+        "logo": "/img/cilix.png",
+        "logo_include_text": true,
+        "name": "CilixCloud",
+        "asn": 215638
+      },
+      "locations": ["London, GB"],
+      "services": ["VPS", "Baremetal", "IXP Access", "LIR Services", "IP Transit", "Tunnels", "Colocation"],
+      "routes": "Full",
+      "bgpFeatures": [],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "The BGP Starter VPS is marketed for full-table routing. CilixCloud states that IPv4 and IPv6 BGP sessions are included with network services and that prefix filters update automatically.",
+      "pricing": "BGP Starter VPS at $13.53 USD/month with no setup fee",
+      "billingCurrency": "GBP",
+      "startPrice": 1353,
+      "link": "https://cilix.cloud/store/vps"
+    },
+    {
+      "provider": {
+        "logo": "/img/soraxus.png",
+        "logo_include_text": false,
+        "name": "Soraxus Networks",
+        "asn": 396993
+      },
+      "locations": ["Dallas, US", "Vancouver, CA"],
+      "services": ["Baremetal", "Colocation", "IP Transit", "Tunnels", "DDoS Protection"],
+      "routes": "Full + default",
+      "bgpFeatures": ["BGP Community Passthrough", "Downstream Support"],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "No-table sessions are also available.",
+      "pricing": "Tunnels starting at $7.00 USD/month\nBaremetal starting at $85.00 USD/month\nColocation starting at $80.00 USD/month",
+      "startPrice": 700,
+      "link": "https://soraxus.com/"
+    },
+    {
+      "provider": {
+        "logo": "",
+        "logo_include_text": false,
+        "name": "LowPing NL",
+        "asn": 215296
+      },
+      "locations": ["Amsterdam, NL"],
+      "services": ["VPS", "IXP Access"],
+      "routes": "Full",
+      "bgpFeatures": ["BGP Communities", "BGP Community Passthrough"],
+      "bgpFee": "First BGP session included\nSecond transit session at $4.65 USD/month",
+      "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
+      "notes": "Can provide access to exchanges available at Nikhef, including AMS-IX, Frys-IX, nine-ix, and Piter-IX.",
+      "pricing": "Starting at $7.55 USD/month",
+      "billingCurrency": "EUR",
+      "startPrice": 755,
+      "link": "https://lowping.nl/"
+    },
+    {
+      "provider": {
+        "logo": "/img/rackgenius.png",
+        "logo_include_text": true,
+        "name": "RackGenius",
+        "asn": 32002
+      },
+      "locations": ["Grand Rapids, US", "Detroit, US"],
+      "services": ["VPS", "Baremetal", "Colocation", "IP Transit"],
+      "routes": "Full + default",
+      "bgpFeatures": ["BGP Communities", "BGP Community Passthrough", "Downstream Support"],
+      "bgpFee": "$25 USD one-time; waived for baremetal and colocation customers",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "Prefix lists are exported automatically; one upstream requires a manual update request.",
+      "pricing": "Provider-submitted price: $3.50 USD/month",
+      "startPrice": 350,
+      "link": "https://rackgenius.com/"
+    },
+    {
+      "provider": {
+        "logo": "/img/greybull.svg",
+        "logo_include_text": false,
+        "name": "Greybull",
+        "asn": 202585
+      },
+      "locations": ["Enschede, NL"],
+      "services": ["VPS", "Colocation", "Email", "Web Hosting"],
+      "routes": "Full + default",
+      "bgpFeatures": ["BGP Communities", "BGP Community Passthrough", "Downstream Support"],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "",
+      "pricing": "Starting at $5.80 USD/month",
+      "billingCurrency": "EUR",
+      "startPrice": 580,
+      "link": "https://greybull.nl/"
+    },
+    {
+      "provider": {
+        "logo": "/img/shift-hosting.png",
+        "logo_include_text": true,
+        "name": "Shift Hosting",
+        "asn": 394177
+      },
+      "locations": ["Dallas, US", "Atlanta, US", "Chicago, US"],
+      "services": ["VPS", "Baremetal", "IP Transit", "Transport", "IXP Access", "Colocation", "DDoS Protection"],
+      "routes": "Full + default",
+      "bgpFeatures": ["BGP Communities", "BGP Community Passthrough", "Downstream Support"],
+      "bgpFee": "$25 USD one-time per ASN",
+      "bgpFilters": ["Automatic IRR", "RPKI"],
+      "notes": "Partial-table sessions are also available.",
+      "pricing": "Provider-submitted price: $4.00 USD/month",
+      "startPrice": 400,
+      "link": "https://shifthosting.com/"
+    },
+    {
+      "provider": {
+        "logo": "/img/phylex.svg",
+        "logo_include_text": false,
+        "name": "Phylex",
+        "asn": 213905
+      },
+      "locations": ["Frankfurt, DE"],
+      "services": ["VPS", "Baremetal", "IP Leasing", "IP Transit", "Tunnels"],
+      "routes": "Full + default",
+      "bgpFeatures": ["BGP Community Passthrough", "Downstream Support"],
+      "bgpFee": "$5.81 USD/month for a small session + $5.81 USD setup\nFrom $23.24 USD/month for standard sessions + $11.62 USD setup\n$11.62 USD/month for downstream support",
+      "bgpFilters": ["Automatic IRR", "LOA Required"],
+      "notes": "Free peering or upstream connectivity may be available case by case. GRE, WireGuard, and direct interconnection are supported.",
+      "pricing": "Starting at $4.99 USD/month",
+      "billingCurrency": "EUR",
+      "startPrice": 499,
+      "link": "https://phylex.net/"
     }
   ];
 

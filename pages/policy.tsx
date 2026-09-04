@@ -1,85 +1,116 @@
-'use client';
-
-import Image from 'next/image'
-import React from 'react'
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import Head from 'next/head';
-import Header from "../components/Header";
 import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
-export default function Home() {
+const githubIssueUrl = 'https://github.com/bgpcheap/website/issues/new/choose';
 
+export default function Policy() {
   return (
-    <>
+    <div className="policy-page">
       <Header />
-      <main className="max-w-screen-xl px-8 mx-auto">
-      <h2 className="font-semibold mb-4 text-red-800 text-center mt-20">Please note: This project does not initiate communication via support tickets or live chat. Any individual claiming to be an &apos;auditor&apos; for us is fraudulent.</h2>
-  
-        <div className='bg-zinc-50 text-black p-10 md:mt-20 pt-5 mt-20 border border-gray-200 rounded-lg'>
-  
-            <h3 id="policy-for-adding-hosting-providers-to-bgp-cheap-directory" className="text-2xl font-semibold mb-4">Policy for Adding Hosting Providers to BGP.Cheap Directory</h3>
-            <h4 id="i-purpose" className="text-lg font-semibold mt-4">I. Purpose</h4>
-            <p className="mb-4">The purpose of this policy is to outline the criteria for adding hosting providers to the bgp.cheap directory. This policy ensures that the listed providers offer affordable server options with BGP sessions specifically tailored for newcomers and hobbyists.</p>
-            <h4 id="ii-criteria-for-hosting-providers" className="text-lg font-semibold">II. Criteria for Hosting Providers</h4>
-            <p className="mb-4">To be eligible for listing on the bgp.cheap directory, hosting providers must meet the following criteria:</p>
-            <ol className="list-decimal ml-6 mb-4">
-                <li className="mb-2"><strong>Affordability:</strong>
-                    <ul className="list-disc ml-6">
-                        <li>The provider must have a setup fee of under $50.</li>
-                        <li>The lowest plan offered by the provider must be $10 or cheaper.</li>
-                    </ul>
-                </li>
-                <li className="mb-2"><strong>BGP Session Availability:</strong>
-                    <ul className="list-disc ml-6">
-                        <li>The provider must offer BGP sessions.</li>
-                    </ul>
-                </li>
-                <li className="mb-2"><strong>Quality of Service:</strong>
-                    <ul className="list-disc ml-6">
-                        <li>The provider must have a track record of reliable service, as determined by customer reviews and internal assessment.</li>
-                    </ul>
-                </li>
-                <li className="mb-2"><strong>Customer Support:</strong>
-                    <ul className="list-disc ml-6">
-                        <li>The provider should offer adequate customer support to assist users in setting up and managing their servers and BGP sessions.</li>
-                    </ul>
-                </li>
-                <li className="mb-2"><strong>Legitimacy:</strong>
-                    <ul className="list-disc ml-6">
-                        <li>The provider must be a legitimate business entity, complying with the laws and regulations of its operating jurisdiction.</li>
-                    </ul>
-                </li>
+      <main>
+        <header className="policy-intro">
+          <h1>Listing policy</h1>
+          <p className="policy-lede">
+            bgp.cheap is a factual provider directory. A listing is not a recommendation,
+            certification, audit, or guarantee of service.
+          </p>
+        </header>
+
+        <div className="policy-grid">
+          <aside className="policy-index" aria-label="Policy sections">
+            <p>On this page</p>
+            <ol>
+              <li><a href="#purpose">Purpose</a></li>
+              <li><a href="#eligibility">Eligibility</a></li>
+              <li><a href="#records">Record format</a></li>
+              <li><a href="#submissions">Submissions</a></li>
             </ol>
-            <h4 id="iv-listing-format" className="text-lg font-semibold">III. Listing Format</h4>
-            <p className="mb-4">Providers listed on bgp.cheap will be displayed with the following information:</p>
-            <ul className="list-disc ml-6">
-                <li className="mb-2"><strong>Provider Name:</strong></li>
-                <li className="mb-2"><strong>Plans and Pricing:</strong>
-                    <ul className="list-disc ml-6">
-                        <li>Including setup fees and monthly costs</li>
-                    </ul>
-                </li>
-                <li className="mb-2"><strong>BGP Session Details:</strong>
-                    <ul className="list-disc ml-6">
-                        <li>Information on the BGP sessions offered</li>
-                    </ul>
-                </li>
-                <li className="mb-2"><strong>Locations Details:</strong>
-                    <ul className="list-disc ml-6">
-                        <li>Information on where the services are offered</li>
-                    </ul>
-                </li>
-            </ul>
-            <h4 id="v-policy-review" className="text-lg font-semibold">IV. Policy Review</h4>
-            <p className="mb-4">This policy will be reviewed annually to ensure it continues to facilitate the directory’s objective of providing a reliable resource for finding affordable hosting providers with BGP sessions. Suggestions for policy modifications can be submitted to the review team for consideration during the annual review.</p>
-            <h4 id="vi-contact-information" className="text-lg font-semibold">V. Contact Information</h4>
-            <p className="mb-4">For inquiries regarding this policy or listing your hosting provider, please open a issue on <a href="https://github.com/bgpcheap/website/issues/new/choose" className="text-blue-500 hover:underline">GitHub</a>.</p>
-            <h4 id="vii-policy-effective-date" className="text-lg font-semibold">VI. Policy Effective Date</h4>
-            <p className="mb-4">This policy is effective as of 29/03/2023 (DD/MM/YYYY) and supersedes all previous policies regarding the listing of hosting providers on the bgp.cheap directory.</p>
+            <a className="policy-issue-link" href={githubIssueUrl} target="_blank" rel="noopener noreferrer">
+              Open a GitHub issue
+              <svg className="external-icon" aria-hidden="true" viewBox="0 0 16 16">
+                <path d="M6 3H3v10h10v-3M8 2h6v6M14 2 7 9" />
+              </svg>
+            </a>
+          </aside>
+
+          <article className="policy-copy">
+            <section id="purpose">
+              <p className="section-number">01</p>
+              <div>
+                <h2>Purpose</h2>
+                <p>
+                  The directory helps newcomers and hobbyists compare submitted facts about
+                  lower-cost services that support BGP sessions. Visitors should verify current
+                  availability, terms, and technical details directly with each provider.
+                </p>
+              </div>
+            </section>
+
+            <section id="eligibility">
+              <p className="section-number">02</p>
+              <div>
+                <h2>Eligibility</h2>
+                <p>A submitted listing should meet all of these baseline requirements:</p>
+                <ul>
+                  <li>Offer a service that supports customer BGP sessions.</li>
+                  <li>Advertise a lowest eligible plan of $10 USD or less, or a comparable amount.</li>
+                  <li>Keep any required setup fee below $50 USD.</li>
+                  <li>Provide a public website and enough information to identify the operator.</li>
+                </ul>
+                <p>
+                  Inclusion records eligibility and submitted information only. Maintainers do not
+                  independently rank every provider or promise that a listing remains current.
+                </p>
+              </div>
+            </section>
+
+            <section id="records">
+              <p className="section-number">03</p>
+              <div>
+                <h2>Record format</h2>
+                <p>Listings can include the following submitted fields:</p>
+                <ul className="field-list">
+                  <li>Provider name and ASN</li>
+                  <li>Service locations</li>
+                  <li>Available products</li>
+                  <li>Route delivery</li>
+                  <li>IRR, RPKI, and LOA controls</li>
+                  <li>BGP fees and USD starting price</li>
+                  <li>Provider billing currency</li>
+                  <li>Operational notes and provider link</li>
+                </ul>
+                <p>
+                  Prices are shown in USD for comparison. Non-USD listings use the European
+                  Central Bank reference rates published on 4 September 2026. The currency flag
+                  and code show what the provider actually bills, so the final charge can vary
+                  with exchange rates.
+                </p>
+              </div>
+            </section>
+
+            <section id="submissions">
+              <p className="section-number">04</p>
+              <div>
+                <h2>Submissions and corrections</h2>
+                <p>
+                  To request a listing or correct an existing record, open an issue on GitHub with
+                  public supporting details. Changes are reviewed against this policy and the data
+                  format used by the directory.
+                </p>
+                <div className="policy-warning">
+                  <strong>Fraud warning</strong>
+                  <p>
+                    This project does not initiate communication through provider support tickets
+                    or live chat. Anyone claiming to be a bgp.cheap auditor is fraudulent.
+                  </p>
+                </div>
+                <p className="effective-date">Effective 29 March 2023 · revised 4 September 2026</p>
+              </div>
+            </section>
+          </article>
         </div>
       </main>
       <Footer />
-    </>
-  )
+    </div>
+  );
 }
