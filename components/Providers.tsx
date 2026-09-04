@@ -408,7 +408,7 @@ const data: ProviderData[] = [
         "asn": 26006 
       },
       "locations": ["Indianapolis, US"],
-      "services": ["VPS"],
+      "services": ["VPS", "IP Transit", "IXP Access", "Colocation"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
       "bgpFee": "None",
