@@ -1,0 +1,16 @@
+{
+  "name": "bgp.cheap",
+  "short_name": "bgp.cheap",
+  "description": "A neutral directory for comparing BGP-capable infrastructure providers.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f5ef",
+  "theme_color": "#f3f5ef",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

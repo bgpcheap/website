@@ -1,4 +1,4 @@
-export type BillingCurrency = 'USD' | 'EUR' | 'GBP' | 'CHF' | 'SEK' | 'CZK';
+export type BillingCurrency = 'USD' | 'EUR' | 'GBP' | 'CHF' | 'SEK' | 'CZK' | 'AUD';
 export type BillingCadence = 'monthly' | 'quarterly' | 'annually';
 
 export interface ProviderData {
@@ -190,24 +190,6 @@ const data: ProviderData[] = [
     },
     {
       "provider": {
-        "logo": "/img/f4networks.png",
-        "logo_include_text": false,
-        "name": "F4 Networks",
-        "asn": 21738
-      },
-      "locations": ["Kansas City, US"],
-      "services": ["Baremetal"],
-      "routes": "Full + default",
-      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
-      "bgpFee": "None",
-      "bgpFilters": ["Automatic IRR", "RPKI"],
-      "notes": "Can also provide access to Arelion. The free hobbyist BGP offer was out of stock during the price audit and is not used for this comparison.",
-      "pricing": "Currently orderable servers starting at $33.00 USD/month",
-      "startPrice": 3300,
-      "link": "https://store.f4.network/"
-    },
-    {
-      "provider": {
         "logo": "/img/divergent.png",
         "logo_include_text": true,
         "name": "Divergent Networks",
@@ -252,7 +234,7 @@ const data: ProviderData[] = [
         "name": "Lagrange",
         "asn": 209735
       },
-      "locations": ["London, GB"],
+      "locations": ["London, GB", "Manchester, GB"],
       "services": ["VPS", "Baremetal", "IXP Access", "LIR Services"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
@@ -312,7 +294,7 @@ const data: ProviderData[] = [
         "name": "DutchIS",
         "asn": 198468
       },
-      "locations": ["Apeldoorn, NL"], 
+      "locations": ["Apeldoorn, NL"],
       "services": ["VPS", "IP Transit", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['Downstream Support'],
@@ -511,25 +493,6 @@ const data: ProviderData[] = [
     },
     {
       "provider": {
-        "logo": "/img/myrootpw.svg",
-        "logo_include_text": true,
-        "name": "MyRootPW",
-        "asn": 39409
-      },
-      "locations": ["Vienna, AT", "Amsterdam, NL"],
-      "services": ["LIR Services", "Baremetal", "Tunnels", "IP Transit", "Colocation", "IXP Access"],
-      "routes": "Full + default",
-      "bgpFeatures": [],
-      "bgpFee": "None",
-      "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
-      "notes": "The lower advertised dedicated-server tiers were sold out during the audit, so the comparison uses the lowest orderable tier.",
-      "pricing": "Currently orderable dedicated servers starting at $52.30 USD/month\nIPv6-only LIR service at $69.73 USD/year",
-      "billingCurrency": "EUR",
-      "startPrice": 5230,
-      "link": "https://myrootpw.com/"
-    },
-    {
-      "provider": {
         "logo": "/img/calibour.png",
         "logo_include_text": true,
         "name": "Calibour",
@@ -583,24 +546,6 @@ const data: ProviderData[] = [
       "billingCurrency": "EUR",
       "startPrice": 196,
       "link": "https://skhron.eu/"
-    },
-    {
-      "provider": {
-        "logo": "/img/bharat-datacenter.png",
-        "logo_include_text": true,
-        "name": "Bharat Datacenter",
-        "asn": 151704
-      },
-      "locations": ["New Delhi, IN"],
-      "services": ["Baremetal", "IP Transit", "IXP Access", "Colocation"],
-      "routes": "Full + default",
-      "bgpFeatures": ["Downstream Support"],
-      "bgpFee": "None",
-      "bgpFilters": ["LOA Required"],
-      "notes": "Custom dedicated-server pricing is not published on the provider site. This figure is from the provider submission.",
-      "pricing": "Provider-submitted price: $90.00 USD/month",
-      "startPrice": 9000,
-      "link": "https://bharatdatacenter.com/"
     },
     {
       "provider": {
@@ -832,7 +777,7 @@ const data: ProviderData[] = [
         "name": "Shift Hosting",
         "asn": 394177
       },
-      "locations": ["Dallas, US", "Atlanta, US", "Chicago, US"],
+      "locations": ["Dallas, US", "Atlanta, US", "Chicago, US", "Ashburn, US"],
       "services": ["VPS", "Baremetal", "IP Transit", "Transport", "IXP Access", "Colocation", "DDoS Protection"],
       "routes": "Full + default",
       "bgpFeatures": ["BGP Communities", "BGP Community Passthrough", "Downstream Support"],
@@ -861,6 +806,25 @@ const data: ProviderData[] = [
       "billingCurrency": "EUR",
       "startPrice": 499,
       "link": "https://phylex.net/"
+    },
+    {
+      "provider": {
+        "logo": "/img/flowvps.png",
+        "logo_include_text": true,
+        "name": "FlowVPS",
+        "asn": 37988
+      },
+      "locations": ["Melbourne, AU", "Sydney, AU"],
+      "services": ["VPS"],
+      "routes": "Not submitted",
+      "bgpFeatures": [],
+      "bgpFee": "Not submitted",
+      "bgpFilters": [],
+      "notes": "",
+      "pricing": "Starting at $7.92 USD/month",
+      "billingCurrency": "AUD",
+      "startPrice": 792,
+      "link": "https://billing.flowvps.com/aff.php?aff=94"
     }
   ];
 

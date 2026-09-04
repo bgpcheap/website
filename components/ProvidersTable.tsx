@@ -15,6 +15,7 @@ const currencyFlags: Record<BillingCurrency, string> = {
   CHF: 'ch',
   SEK: 'se',
   CZK: 'cz',
+  AUD: 'au',
 };
 
 function formatUsd(cents: number) {

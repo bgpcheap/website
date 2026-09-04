@@ -1,11 +1,37 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import Seo from '@/components/Seo';
 
 const githubIssueUrl = 'https://github.com/bgpcheap/website/issues/new/choose';
+const title = 'Listing Policy | bgp.cheap';
+const description =
+  'Read the eligibility, record format, pricing, submission process, and fraud warning for provider listings on bgp.cheap.';
+
+const policyStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://bgp.cheap/policy#policy',
+  name: title,
+  description,
+  url: 'https://bgp.cheap/policy',
+  dateModified: '2026-09-04',
+  isPartOf: {
+    '@type': 'WebSite',
+    '@id': 'https://bgp.cheap/#website',
+    name: 'bgp.cheap',
+    url: 'https://bgp.cheap/',
+  },
+};
 
 export default function Policy() {
   return (
     <div className="policy-page">
+      <Seo
+        title={title}
+        description={description}
+        path="/policy"
+        structuredData={policyStructuredData}
+      />
       <Header />
       <main>
         <header className="policy-intro">
@@ -53,7 +79,7 @@ export default function Policy() {
                 <p>A submitted listing should meet all of these baseline requirements:</p>
                 <ul>
                   <li>Offer a service that supports customer BGP sessions.</li>
-                  <li>Advertise a lowest eligible plan of $10 USD or less, or a comparable amount.</li>
+                  <li>Advertise a lowest eligible plan of $15 USD or less, or a comparable amount.</li>
                   <li>Keep any required setup fee below $50 USD.</li>
                   <li>Provide a public website and enough information to identify the operator.</li>
                 </ul>
