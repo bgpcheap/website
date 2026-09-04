@@ -609,6 +609,7 @@ a {
   min-width: 0;
   padding: 19px 14px;
   border-left: 1px solid var(--rule-soft);
+  overflow-wrap: anywhere;
 }
 
 .provider-row > div:first-child {
@@ -819,9 +820,10 @@ a {
 
 .price-value {
   display: flex;
+  max-width: 100%;
   align-items: baseline;
+  flex-wrap: wrap;
   gap: 6px;
-  white-space: nowrap;
 }
 
 .provider-price strong {
@@ -837,13 +839,14 @@ a {
 
 .billing-currency {
   display: inline-flex;
+  max-width: 100%;
   align-items: center;
   gap: 7px;
   color: var(--ink-soft);
   font-family: var(--mono);
   font-size: 11px;
   line-height: 1.2;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .billing-currency img {
@@ -877,7 +880,12 @@ a {
   padding: 3px 5px 3px 2px;
   border: 1px solid transparent;
   border-radius: 4px;
-  white-space: nowrap;
+  white-space: normal;
+}
+
+.location-item > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .location-item img {
@@ -1320,7 +1328,7 @@ a {
   font-size: 13px !important;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1320px) {
   .directory-page {
     overflow: visible;
   }
@@ -1379,7 +1387,7 @@ a {
   }
 }
 
-@media (min-width: 801px) and (max-width: 1180px) {
+@media (min-width: 801px) and (max-width: 1320px) {
   .provider-workspace {
     grid-template-columns: minmax(270px, 29vw) minmax(0, 1fr);
   }
