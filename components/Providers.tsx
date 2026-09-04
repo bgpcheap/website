@@ -633,6 +633,24 @@ const data: ProviderData[] = [
       "pricing": "Starting at €2.95",
       "startPrice": 295,
       "link": "https://host.al/"
+    },
+    {
+      "provider": {
+        "logo": "/img/africloud.png",
+        "logo_include_text": true,
+        "name": "AFRICLOUD",
+        "asn": 209179
+      },
+      "locations": ["Lisbon, PT", "Johannesburg, ZA", "Lagos, NG"],
+      "services": ["VPS"],
+      "routes": "Full + default",
+      "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
+      "bgpFee": "None",
+      "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
+      "notes": "Peering at NAPAfrica Johannesburg, IXPN Lagos, DE-CIX Lisbon and DE-CIX Madrid. IPv6 included on every server.",
+      "pricing": "Starting at $10 USD",
+      "startPrice": 1000,
+      "link": "https://africloud.com/order"
     }
   ];
 
