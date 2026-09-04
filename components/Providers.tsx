@@ -615,6 +615,24 @@ const data: ProviderData[] = [
       "pricing": "Starting at 2.50 EUR",
       "startPrice": 294,
       "link": "https://pawhost.de/"
+    },
+    {
+      "provider": {
+        "logo": "/img/hostal.png",
+        "logo_include_text": true,
+        "name": "Host.al",
+        "asn": 213683
+      },
+      "locations": ["Tirana, AL", "Kansas City, US", "Nuremberg, DE"],
+      "services": ["VPS", "Baremetal", "Colocation", "LIR Services"],
+      "routes": "Full + default",
+      "bgpFeatures": ["BGP Communities", "BGP Community Passthrough", "Downstream Support"],
+      "bgpFee": "None",
+      "bgpFilters": ["RPKI"],
+      "notes": "BGP included with every VPS, dedicated, and colocation package. BGP community passthrough is partial/limited. Active downstream support for ASN setup, IRR, and RPKI. ICANN-accredited domain registrar (IANA #4332).",
+      "pricing": "Starting at €2.95",
+      "startPrice": 295,
+      "link": "https://host.al/"
     }
   ];
 
