@@ -122,7 +122,7 @@ const data: ProviderData[] = [
         "name": "Xenyth",
         "asn": 835
       },
-      "locations": ["Toronto, CA"],
+      "locations": ["Toronto, CA", "Amsterdam, NL", "London, GB", "New York, US", "Ashburn, US"],
       "services": ["VPS", "Baremetal", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
