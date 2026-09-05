@@ -1,13 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
-  <title id="title">bgp.cheap route mark</title>
-  <g fill="none" stroke="#123a36" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M10 48 24 18l18 13 12-18M42 31l11 20"/>
+  <title id="title">bgp.cheap route index mark</title>
+  <path d="M10 5h32l12 12v42H10Z" fill="#fbfcf8" stroke="#123a36" stroke-width="5" stroke-linejoin="miter"/>
+  <path d="M42 5v12h12Z" fill="#123a36"/>
+  <g fill="none" stroke="#123a36" stroke-width="5" stroke-linecap="square">
+    <path d="M18 19h16M18 31h26M18 54h17"/>
   </g>
-  <g stroke="#123a36" stroke-width="4">
-    <circle cx="10" cy="48" r="6" fill="#11a88b"/>
-    <circle cx="24" cy="18" r="6" fill="#f3f5ef"/>
-    <circle cx="42" cy="31" r="6" fill="#f3f5ef"/>
-    <circle cx="54" cy="13" r="6" fill="#f3f5ef"/>
-    <circle cx="53" cy="51" r="6" fill="#f3f5ef"/>
-  </g>
+  <path d="M18 43h39" fill="none" stroke="#007563" stroke-width="7" stroke-linecap="square"/>
+  <rect x="52" y="38" width="8" height="10" fill="#007563"/>
 </svg>
