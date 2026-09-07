@@ -369,7 +369,7 @@ const data: ProviderData[] = [
         "name": "HYEHOST",
         "asn": 47272 
       },
-      "locations": ["Wolverhampton, GB"],
+      "locations": ["Wolverhampton, GB", "Ashburn, US"],
       "services": ["VPS", "Baremetal", "Shared Hosting", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Community Passthrough', 'Downstream Support'],
@@ -795,16 +795,16 @@ const data: ProviderData[] = [
         "name": "Phylex",
         "asn": 213905
       },
-      "locations": ["Frankfurt, DE"],
+      "locations": ["Frankfurt, DE", "Amsterdam, NL"],
       "services": ["VPS", "Baremetal", "IP Leasing", "IP Transit", "Tunnels"],
       "routes": "Full + default",
       "bgpFeatures": ["BGP Community Passthrough", "Downstream Support"],
       "bgpFee": "$5.81 USD/month for a small session + $5.81 USD setup\nFrom $23.24 USD/month for standard sessions + $11.62 USD setup\n$11.62 USD/month for downstream support",
-      "bgpFilters": ["Automatic IRR", "LOA Required"],
-      "notes": "Free peering or upstream connectivity may be available case by case. GRE, WireGuard, and direct interconnection are supported.",
-      "pricing": "Starting at $4.99 USD/month",
+      "bgpFilters": ["Automatic IRR", "RPKI", "LOA Required"],
+      "notes": "Free peering or upstream connectivity may be available case by case. GRE, WireGuard, and direct interconnection are supported. Free BYOIP and remote peering. Free 10 Mbps IPv6 session and transit for members of the same IX (BGP.Exchange).",
+      "pricing": "Starting at $3.45 USD/month",
       "billingCurrency": "EUR",
-      "startPrice": 499,
+      "startPrice": 345,
       "link": "https://phylex.net/"
     },
     {
