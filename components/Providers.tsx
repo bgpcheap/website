@@ -140,7 +140,7 @@ const data: ProviderData[] = [
         "name": "V.ps",
         "asn": 3204
       },
-      "locations": ["London, GB", "Frankfurt, DE", "Amsterdam, NL", "Düsseldorf, DE", "Tallinn, EE", "San Jose, US", "New York, US", "Seattle, US", "Hong Kong, HK", "Osaka, JP", "Tokyo, JP", "Sydney, AU"],
+      "locations": ["London, GB", "Frankfurt, DE", "Amsterdam, NL", "Dusseldorf, DE", "Tallinn, EE", "San Jose, US", "New York, US", "Seattle, US", "Hong Kong, HK", "Osaka, JP", "Tokyo, JP", "Sydney, AU"],
       "services": ["VPS", "IXP Access"],
       "routes": "Full + default",
       "bgpFeatures": ['BGP Communities', 'BGP Community Passthrough', 'Downstream Support'],
@@ -572,7 +572,7 @@ const data: ProviderData[] = [
         "name": "PawHost",
         "asn": 214915
       },
-      "locations": ["Düsseldorf, DE"],
+      "locations": ["Dusseldorf, DE"],
       "services": ["VPS", "Baremetal", "Colocation"],
       "routes": "Full",
       "bgpFeatures": ['BGP Communities', "Downstream Support", "BGP Community Passthrough"],
